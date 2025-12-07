@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "31864835462",
+    "project_id": "oxfordfocus-6286a",
+    "storage_bucket": "oxfordfocus-6286a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:31864835462:android:a13f9a95dc098162c17007",
+        "android_client_info": {
+          "package_name": "com.bsh.oxford.oxford_focus"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA61PqWNbGJcp0ITCQCNiv3GBT_xQUcmZY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
