@@ -2,6 +2,13 @@
 
 Oxford Focus, Oxford 3000™ kelime listesini temel alarak geliştirilmiş, tamamen çevrimdışı (offline) çalışabilen, modern ve kullanıcı dostu bir flashcard uygulamasıdır.
 
+<div align="center">
+  <img src="docs/images/dashboard.png" width="22%" />
+  <img src="docs/images/flashcard_front.png" width="22%" />
+  <img src="docs/images/flashcard_back.png" width="22%" />
+  <img src="docs/images/notes.png" width="22%" />
+</div>
+
 ## 📱 Özellikler
 
 *   **Çevrimdışı Çalışma:** İnternet bağlantısına ihtiyaç duymadan her yerde çalışabilirsiniz. Verileriniz cihazınızda güvenle saklanır (SQLite).
@@ -32,7 +39,7 @@ Oxford Focus, Oxford 3000™ kelime listesini temel alarak geliştirilmiş, tama
     flutter pub get
     ```
 
-3.  Kod üretimini çalıştırın (Gerekirse):
+3.  Kod üretimini çalıştırın:
     ```bash
     dart run build_runner build --delete-conflicting-outputs
     ```

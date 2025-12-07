@@ -26,6 +26,15 @@ Future<List<Word>> currentWeekWords(CurrentWeekWordsRef ref) async {
   
   if (progress.activeWordIds.isEmpty) return [];
   
-  // Directly fetch from SQLite, it's fast enough.
   return repository.getWordsByIds(progress.activeWordIds);
+}
+
+@riverpod
+Future<List<Word>> savedWords(SavedWordsRef ref) async {
+  final repository = await ref.watch(wordRepositoryProvider.future);
+  final progress = await ref.watch(userProgressProvider.future);
+  
+  if (progress.savedNotesIds.isEmpty) return [];
+  
+  return repository.getWordsByIds(progress.savedNotesIds);
 }

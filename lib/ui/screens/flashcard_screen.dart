@@ -128,6 +128,7 @@ class _FlashcardViewState extends ConsumerState<FlashcardView> {
             // Save to notes
             final repo = await ref.read(wordRepositoryProvider.future);
             await repo.saveNote(widget.word.id);
+            ref.invalidate(userProgressProvider);
             if (mounted) {
               ScaffoldMessenger.of(context).showSnackBar(
                 const SnackBar(content: Text('Notlara eklendi!'), duration: Duration(seconds: 1)),

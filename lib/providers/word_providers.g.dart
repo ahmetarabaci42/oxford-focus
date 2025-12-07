@@ -51,5 +51,19 @@ final currentWeekWordsProvider = AutoDisposeFutureProvider<List<Word>>.internal(
 );
 
 typedef CurrentWeekWordsRef = AutoDisposeFutureProviderRef<List<Word>>;
+String _$savedWordsHash() => r'e090cd4e6252b4b04ccf8291b07bc266ddbc613b';
+
+/// See also [savedWords].
+@ProviderFor(savedWords)
+final savedWordsProvider = AutoDisposeFutureProvider<List<Word>>.internal(
+  savedWords,
+  name: r'savedWordsProvider',
+  debugGetCreateSourceHash:
+      const bool.fromEnvironment('dart.vm.product') ? null : _$savedWordsHash,
+  dependencies: null,
+  allTransitiveDependencies: null,
+);
+
+typedef SavedWordsRef = AutoDisposeFutureProviderRef<List<Word>>;
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member
