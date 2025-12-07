@@ -61,7 +61,3 @@ Proje, temiz mimari prensiplerine uygun olarak katmanlı bir yapıda geliştiril
 *   **Data Layer:** Repositories, Models, Local Data Source (SQLite), Seeding Service.
 *   **Providers Layer:** Riverpod ile state yönetimi ve dependency injection.
 *   **UI Layer:** Ekranlar, widget'lar ve temalar.
-
-## 📄 Lisans
-
-Bu proje MIT lisansı ile lisanslanmıştır.
