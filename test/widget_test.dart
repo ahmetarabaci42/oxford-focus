@@ -13,10 +13,5 @@ void main() {
 
     // Verify that our title is present.
     expect(find.text('Oxford Focus'), findsOneWidget);
-    test(); 
   });
-}
-
-void test() boolean{
-  return true;
 }

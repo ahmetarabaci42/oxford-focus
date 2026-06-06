@@ -1,36 +1,35 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:hive_flutter/hive_flutter.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:oxford_focus/core/theme/app_theme.dart';
 import 'package:oxford_focus/data/services/notification_service.dart';
-import 'package:oxford_focus/ui/screens/dashboard_screen.dart';
+import 'package:oxford_focus/ui/screens/onboarding_screen.dart';
+import 'package:oxford_focus/ui/shell/main_shell.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  
-  // Removed Firebase.initializeApp();
-  
-  // Initialize Hive - Still used implicitly by HiveFlutter if we use it elsewhere?
-  // We removed explicit Hive usage in providers, but keeping it if other parts use it.
-  // Assuming no other parts use it for now given the context, but safe to keep init or remove.
-  // User asked for SQLite. I'll keep Hive init just in case `notification_service` or others use it, 
-  // but looking at directory structure, likely not.
-  // Actually, I'll keep it to avoid breaking unseen code, but it's likely redundant.
+
   await Hive.initFlutter();
-  
+
   // Init Notifications
   await NotificationService().init();
   NotificationService().scheduleDailyReminder();
-  
+
+  // Check if onboarding has been completed
+  final prefs = await SharedPreferences.getInstance();
+  final onboardingDone = prefs.getBool('onboarding_done') ?? false;
+
   runApp(
-    const ProviderScope(
-      child: OxfordFocusApp(),
+    ProviderScope(
+      child: OxfordFocusApp(showOnboarding: !onboardingDone),
     ),
   );
 }
 
 class OxfordFocusApp extends StatelessWidget {
-  const OxfordFocusApp({super.key});
+  final bool showOnboarding;
+  const OxfordFocusApp({super.key, required this.showOnboarding});
 
   @override
   Widget build(BuildContext context) {
@@ -38,7 +37,7 @@ class OxfordFocusApp extends StatelessWidget {
       title: 'Oxford Focus',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.darkTheme,
-      home: const DashboardScreen(),
+      home: showOnboarding ? const OnboardingScreen() : const MainShell(),
     );
   }
 }
