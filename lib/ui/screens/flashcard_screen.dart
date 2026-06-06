@@ -586,7 +586,7 @@ class _FlipCardState extends State<_FlipCard>
             ),
             const SizedBox(height: 10),
             ...examples.map((ex) => Padding(
-                  padding: const EdgeInsets.only(bottom: 10),
+                  padding: const EdgeInsets.only(bottom: 12),
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -597,10 +597,24 @@ class _FlipCardState extends State<_FlipCard>
                               fontWeight: FontWeight.bold)),
                       const SizedBox(width: 8),
                       Expanded(
-                        child: Text(
-                          ex,
-                          style: const TextStyle(
-                              color: Colors.white70, fontSize: 14, height: 1.5),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              ex['english']!,
+                              style: const TextStyle(
+                                  color: Colors.white, fontSize: 14, height: 1.4, fontWeight: FontWeight.w500),
+                            ),
+                            const SizedBox(height: 4),
+                            Text(
+                              ex['turkish']!,
+                              style: TextStyle(
+                                  color: const Color(0xFF00E5FF).withOpacity(0.85),
+                                  fontSize: 12.5,
+                                  fontStyle: FontStyle.italic,
+                                  height: 1.3),
+                            ),
+                          ],
                         ),
                       ),
                     ],
@@ -635,11 +649,57 @@ class _FlipCardState extends State<_FlipCard>
     return 'noun';
   }
 
-  List<String> _generateExamples(String eng, String tr) {
-    return [
-      'She decided to $eng the situation carefully.',
-      'The report showed how to $eng various aspects of the project.',
-    ];
+  List<Map<String, String>> _generateExamples(String eng, String tr) {
+    final pos = _inferPOS(eng);
+    switch (pos.toLowerCase()) {
+      case 'verb':
+        return [
+          {
+            'english': 'We should $eng this problem immediately.',
+            'turkish': 'Bu sorunu hemen $tr gerekiyor.'
+          },
+          {
+            'english': 'She made an effort to $eng the new method.',
+            'turkish': 'Yeni yöntemi $tr için çaba gösterdi.'
+          },
+        ];
+      case 'adjective':
+      case 'adj':
+        return [
+          {
+            'english': 'It was a $eng day for everyone.',
+            'turkish': 'Herkes için $tr bir gündü.'
+          },
+          {
+            'english': 'He wants to buy a $eng car next year.',
+            'turkish': 'Gelecek yıl $tr bir araba satın almak istiyor.'
+          },
+        ];
+      case 'adverb':
+      case 'adv':
+        return [
+          {
+            'english': 'She managed to complete the task $eng.',
+            'turkish': 'Görevi $tr tamamlamayı başardı.'
+          },
+          {
+            'english': 'Please follow these steps $eng.',
+            'turkish': 'Lütfen bu adımları $tr takip edin.'
+          },
+        ];
+      case 'noun':
+      default:
+        return [
+          {
+            'english': 'This is a very important $eng for our team.',
+            'turkish': 'Bu ekibimiz için çok önemli bir $tr.'
+          },
+          {
+            'english': 'The final success depends on this $eng.',
+            'turkish': 'Nihai başarı bu $tr konusuna bağlıdır.'
+          },
+        ];
+    }
   }
 }
 
