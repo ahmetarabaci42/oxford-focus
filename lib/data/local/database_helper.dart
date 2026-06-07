@@ -25,7 +25,7 @@ class DatabaseHelper {
 
     return await openDatabase(
       path,
-      version: 3,
+      version: 4,
       onCreate: _onCreate,
       onUpgrade: _onUpgrade,
     );
@@ -44,6 +44,10 @@ class DatabaseHelper {
       await _createDailyStreaksTable(db);
     }
     if (oldVersion < 3) {
+      await db.execute('DROP TABLE IF EXISTS words');
+      await _createWordsTable(db);
+    }
+    if (oldVersion < 4) {
       await db.execute('DROP TABLE IF EXISTS words');
       await _createWordsTable(db);
     }
@@ -384,6 +388,12 @@ class DatabaseHelper {
         whereArgs: [userId],
       );
     });
+  }
+
+  Future<bool> isWordsTableEmpty() async {
+    final db = await database;
+    final count = Sqflite.firstIntValue(await db.rawQuery('SELECT COUNT(*) FROM words'));
+    return count == 0;
   }
 
   String _todayStr() => DateTime.now().toIso8601String().substring(0, 10);

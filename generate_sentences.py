@@ -113,8 +113,8 @@ def main():
         print("All words are already processed!", flush=True)
         return
 
-    # Chunk into batches of 40 words
-    batch_size = 40
+    # Chunk into batches of 20 words
+    batch_size = 20
     batches = [words_to_process[i:i+batch_size] for i in range(0, len(words_to_process), batch_size)]
     
     word_map = {w['id']: w for w in words_list}
@@ -137,7 +137,7 @@ def main():
             save_data(json_path, data)
             print(f"Saved progress after batch {batch_idx}.", flush=True)
         
-        # Sleep 13 seconds between batches to strictly stay under 5 RPM limit
+        # Sleep 13 seconds between batches to strictly stay under 15 RPM limit and TPM limit
         if batch_idx < len(batches):
             print("Sleeping 13 seconds to respect rate limits...", flush=True)
             time.sleep(13)

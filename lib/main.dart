@@ -6,6 +6,8 @@ import 'package:oxford_focus/core/theme/app_theme.dart';
 import 'package:oxford_focus/data/services/notification_service.dart';
 import 'package:oxford_focus/ui/screens/onboarding_screen.dart';
 import 'package:oxford_focus/ui/shell/main_shell.dart';
+import 'package:oxford_focus/data/local/database_helper.dart';
+import 'package:oxford_focus/data/services/seeding_service.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -15,6 +17,17 @@ Future<void> main() async {
   // Init Notifications
   await NotificationService().init();
   NotificationService().scheduleDailyReminder();
+
+  // Auto-seed words database if empty
+  final dbHelper = DatabaseHelper();
+  if (await dbHelper.isWordsTableEmpty()) {
+    print('Words table is empty. Auto-seeding database...');
+    try {
+      await SeedingService().seedWords('oxford_3000.json');
+    } catch (e) {
+      print('Auto-seeding error: $e');
+    }
+  }
 
   // Check if onboarding has been completed
   final prefs = await SharedPreferences.getInstance();
