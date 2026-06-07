@@ -210,6 +210,38 @@ class _FlashcardScreenState extends ConsumerState<FlashcardScreen> {
       appBar: AppBar(
         title: const Text('Study'),
         automaticallyImplyLeading: false,
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.first_page_rounded, size: 28),
+            tooltip: 'Birinci Kelimeye Dön',
+            onPressed: () {
+              final userId = userIdAsync.when(
+                data: (id) => id,
+                loading: () => 'local_user',
+                error: (_, __) => 'local_user',
+              );
+              setState(() {
+                _currentIndex = 0;
+                _isFlipped = false;
+              });
+              if (_loadedWordsIds != null) {
+                _saveIndex(userId, 0, _loadedWordsIds!);
+              }
+              ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(
+                  content: const Text('İlk kelimeye dönüldü.'),
+                  duration: const Duration(seconds: 1),
+                  behavior: SnackBarBehavior.floating,
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+                ),
+              );
+            },
+          ),
+          IconButton(
+            icon: const Icon(Icons.close_rounded),
+            onPressed: () => Navigator.pop(context),
+          ),
+        ],
       ),
       body: wordsAsync.when(
         loading: () => _buildShimmer(),
