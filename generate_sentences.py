@@ -2,8 +2,6 @@ import os
 import json
 import time
 import sys
-from concurrent.futures import ThreadPoolExecutor, as_completed
-from threading import Lock
 from google import genai
 from google.genai import types
 from pydantic import BaseModel
@@ -16,7 +14,6 @@ if not api_key:
     sys.exit(1)
 
 client = genai.Client(api_key=api_key)
-file_lock = Lock()
 
 # Pydantic models for structured output
 class WordItem(BaseModel):
@@ -38,9 +35,8 @@ def load_data(file_path):
     return {"words": []}
 
 def save_data(file_path, data):
-    with file_lock:
-        with open(file_path, 'w', encoding='utf-8') as f:
-            json.dump(data, f, ensure_ascii=False, indent=2)
+    with open(file_path, 'w', encoding='utf-8') as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
 
 def process_batch(batch_idx, batch):
     print(f"Starting batch {batch_idx} (Size: {len(batch)})...", flush=True)
@@ -68,7 +64,7 @@ List of words to process:
     while retries > 0:
         try:
             response = client.models.generate_content(
-                model='gemini-flash-latest',
+                model='gemini-2.5-flash',
                 contents=prompt,
                 config=types.GenerateContentConfig(
                     response_mime_type='application/json',
@@ -79,7 +75,6 @@ List of words to process:
             res_data = json.loads(response.text)
             generated_words = res_data.get('words', [])
             
-            # Verify we received all words or most of them
             if not generated_words:
                 raise ValueError("Received empty list of words from API")
                 
@@ -97,7 +92,7 @@ List of words to process:
             time.sleep(sleep_time)
             backoff *= 2.0
             
-    print(f"FAILED to process batch {batch_idx} after multiple retries.")
+    print(f"FAILED to process batch {batch_idx} after multiple retries.", flush=True)
     return []
 
 def main():
@@ -105,7 +100,7 @@ def main():
     data = load_data(json_path)
     words_list = data.get('words', [])
     total_words = len(words_list)
-    print(f"Loaded {total_words} words from {json_path}")
+    print(f"Loaded {total_words} words from {json_path}", flush=True)
     
     # Filter words that need generation
     words_to_process = []
@@ -113,55 +108,44 @@ def main():
         if 'ex1' not in w or not w['ex1']:
             words_to_process.append(w)
             
-    print(f"Words remaining to process: {len(words_to_process)}")
+    print(f"Words remaining to process: {len(words_to_process)}", flush=True)
     if not words_to_process:
-        print("All words are already processed!")
+        print("All words are already processed!", flush=True)
         return
 
-    # Chunk into batches of 40 words (safe and well under token limits)
+    # Chunk into batches of 40 words
     batch_size = 40
     batches = [words_to_process[i:i+batch_size] for i in range(0, len(words_to_process), batch_size)]
     
-    # Create mapping of ID to original word object
     word_map = {w['id']: w for w in words_list}
     
-    # Run with ThreadPoolExecutor
-    max_workers = 3  # Safe speed to stay within free-tier RPM and avoid 503 limits
-    print(f"Starting execution with {max_workers} parallel workers...")
-    
-    with ThreadPoolExecutor(max_workers=max_workers) as executor:
-        futures = {executor.submit(process_batch, i+1, batch): i for i, batch in enumerate(batches)}
+    print("Starting sequential execution...", flush=True)
+    for i, batch in enumerate(batches):
+        batch_idx = i + 1
+        results = process_batch(batch_idx, batch)
+        if results:
+            for res_word in results:
+                wid = res_word['id']
+                if wid in word_map:
+                    word_map[wid]['ipa'] = res_word['ipa']
+                    word_map[wid]['pos'] = res_word['pos']
+                    word_map[wid]['ex1'] = res_word['ex1']
+                    word_map[wid]['ex1_tr'] = res_word['ex1_tr']
+                    word_map[wid]['ex2'] = res_word['ex2']
+                    word_map[wid]['ex2_tr'] = res_word['ex2_tr']
+            
+            save_data(json_path, data)
+            print(f"Saved progress after batch {batch_idx}.", flush=True)
         
-        for future in as_completed(futures):
-            batch_idx = futures[future] + 1
-            try:
-                results = future.result()
-                if results:
-                    # Update memory structure
-                    for res_word in results:
-                        wid = res_word['id']
-                        if wid in word_map:
-                            word_map[wid]['ipa'] = res_word['ipa']
-                            word_map[wid]['pos'] = res_word['pos']
-                            word_map[wid]['ex1'] = res_word['ex1']
-                            word_map[wid]['ex1_tr'] = res_word['ex1_tr']
-                            word_map[wid]['ex2'] = res_word['ex2']
-                            word_map[wid]['ex2_tr'] = res_word['ex2_tr']
-                    
-                    # Save to file periodically under file_lock
-                    save_data(json_path, data)
-                    print(f"Saved progress after batch {batch_idx}.", flush=True)
-            except Exception as e:
-                print(f"Exception raised in future for batch {batch_idx}: {e}", flush=True)
-                
-            # Rate limit mitigation sleep
-            time.sleep(2)
+        # Sleep 13 seconds between batches to strictly stay under 5 RPM limit
+        if batch_idx < len(batches):
+            print("Sleeping 13 seconds to respect rate limits...", flush=True)
+            time.sleep(13)
 
-    print("\nGeneration run completed! Checking results...")
-    # Final check of missing words
+    print("\nGeneration run completed! Checking results...", flush=True)
     data = load_data(json_path)
     missing = sum(1 for w in data.get('words', []) if 'ex1' not in w or not w['ex1'])
-    print(f"Finished. Words remaining without sentences: {missing}/{total_words}")
+    print(f"Finished. Words remaining without sentences: {missing}/{total_words}", flush=True)
 
 if __name__ == '__main__':
     main()

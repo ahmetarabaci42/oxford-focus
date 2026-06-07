@@ -143,6 +143,73 @@ class DashboardScreen extends ConsumerWidget {
                       },
                       tooltip: 'Load word database',
                     ),
+                    // Reset button
+                    IconButton(
+                      icon: const Icon(Icons.restart_alt_rounded),
+                      onPressed: () async {
+                        final confirm = await showDialog<bool>(
+                          context: context,
+                          builder: (context) => AlertDialog(
+                            backgroundColor: const Color(0xFF1E1E1E),
+                            title: const Text(
+                              'İlerlemeyi Sıfırla',
+                              style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+                            ),
+                            content: const Text(
+                              'Öğrenme geçmişiniz, serileriniz ve öğrendiğiniz tüm kelimeler sıfırlanacaktır. Bu işlemi onaylıyor musunuz?',
+                              style: TextStyle(color: Colors.grey),
+                            ),
+                            actions: [
+                              TextButton(
+                                onPressed: () => Navigator.of(context).pop(false),
+                                child: const Text('İptal', style: TextStyle(color: Colors.grey)),
+                              ),
+                              TextButton(
+                                onPressed: () => Navigator.of(context).pop(true),
+                                child: const Text('Sıfırla', style: TextStyle(color: Colors.redAccent)),
+                              ),
+                            ],
+                          ),
+                        );
+
+                        if (confirm == true) {
+                          try {
+                            final repository = await ref.read(wordRepositoryProvider.future);
+                            await repository.resetUserProgress();
+                            
+                            // Invalidate providers to force reload/refresh UI
+                            ref.invalidate(wordRepositoryProvider);
+                            ref.invalidate(userProgressProvider);
+                            ref.invalidate(statsProvider);
+                            
+                            if (context.mounted) {
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                SnackBar(
+                                  content: const Text('✅ İlerlemeniz başarıyla sıfırlandı!'),
+                                  backgroundColor: const Color(0xFF00E5FF).withOpacity(0.8),
+                                  behavior: SnackBarBehavior.floating,
+                                  shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(12)),
+                                ),
+                              );
+                            }
+                          } catch (e) {
+                            if (context.mounted) {
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                SnackBar(
+                                  content: Text('Hata oluştu: $e'),
+                                  backgroundColor: Colors.red[800],
+                                  behavior: SnackBarBehavior.floating,
+                                  shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(12)),
+                                ),
+                              );
+                            }
+                          }
+                        }
+                      },
+                      tooltip: 'İlerlemeyi Sıfırla',
+                    ),
                   ],
                 ),
 

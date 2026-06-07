@@ -365,5 +365,26 @@ class DatabaseHelper {
     return (known / sessions.length * 100);
   }
 
+  Future<void> resetUserProgress(String userId) async {
+    final db = await database;
+    await db.transaction((txn) async {
+      await txn.delete(
+        'user_progress',
+        where: 'userId = ?',
+        whereArgs: [userId],
+      );
+      await txn.delete(
+        'study_sessions',
+        where: 'userId = ?',
+        whereArgs: [userId],
+      );
+      await txn.delete(
+        'daily_streaks',
+        where: 'userId = ?',
+        whereArgs: [userId],
+      );
+    });
+  }
+
   String _todayStr() => DateTime.now().toIso8601String().substring(0, 10);
 }

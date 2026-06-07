@@ -13264,481 +13264,961 @@
       "id": 1106,
       "categoryId": 5,
       "ENG": "elsewhere",
-      "TR": "başka yerde"
+      "TR": "başka yerde",
+      "ipa": "/ˌelsˈweə(r)/",
+      "pos": "adverb",
+      "ex1": "If you are not satisfied with our service, you can look elsewhere.",
+      "ex1_tr": "Hizmetimizden memnun değilseniz başka bir yere bakabilirsiniz.",
+      "ex2": "The answer must be found elsewhere.",
+      "ex2_tr": "Cevap başka bir yerde bulunmalı."
     },
     {
       "id": 1107,
       "categoryId": 5,
       "ENG": "email",
-      "TR": "E-posta"
+      "TR": "E-posta",
+      "ipa": "/ˈiːmeɪl/",
+      "pos": "noun",
+      "ex1": "I sent you an email yesterday but you didn't reply.",
+      "ex1_tr": "Dün size bir e-posta gönderdim ama cevap vermediniz.",
+      "ex2": "Please send me your contact details by email.",
+      "ex2_tr": "Lütfen iletişim bilgilerinizi bana e-posta ile gönderin."
     },
     {
       "id": 1108,
       "categoryId": 5,
       "ENG": "embarrass",
-      "TR": "utandırmak"
+      "TR": "utandırmak",
+      "ipa": "/ɪmˈbærəs/",
+      "pos": "verb",
+      "ex1": "I didn't mean to embarrass you in front of your friends.",
+      "ex1_tr": "Arkadaşlarının önünde seni utandırmak istememiştim.",
+      "ex2": "Her silly questions always embarrass her parents.",
+      "ex2_tr": "Onun aptalca soruları anne babasını her zaman utandırır."
     },
     {
       "id": 1109,
       "categoryId": 5,
       "ENG": "embarrassed",
-      "TR": "mahçup"
+      "TR": "mahçup",
+      "ipa": "/ɪmˈbærəst/",
+      "pos": "adjective",
+      "ex1": "She felt embarrassed when she realized her mistake.",
+      "ex1_tr": "Hatasını fark ettiğinde mahcup hissetti.",
+      "ex2": "I was too embarrassed to admit that I didn't know the answer.",
+      "ex2_tr": "Cevabı bilmediğimi itiraf edemeyecek kadar utanmıştım."
     },
     {
       "id": 1110,
       "categoryId": 5,
       "ENG": "embarrassing",
-      "TR": "utandırıcı"
+      "TR": "utandırıcı",
+      "ipa": "/ɪmˈbærəsɪŋ/",
+      "pos": "adjective",
+      "ex1": "It was an embarrassing situation for everyone involved.",
+      "ex1_tr": "İlgili herkes için utandırıcı bir durumdu.",
+      "ex2": "I had an embarrassing moment when I tripped on the stairs.",
+      "ex2_tr": "Merdivenlerde takılıp düştüğümde utanç verici bir an yaşadım."
     },
     {
       "id": 1111,
       "categoryId": 5,
       "ENG": "embarrassment",
-      "TR": "sıkıntı"
+      "TR": "sıkıntı",
+      "ipa": "/ɪmˈbærəsmənt/",
+      "pos": "noun",
+      "ex1": "He went red with embarrassment when they started laughing.",
+      "ex1_tr": "Gülmeye başladıklarında utançtan kıpkırmızı oldu.",
+      "ex2": "To avoid embarrassment, she decided to stay at home.",
+      "ex2_tr": "Sıkıntıdan kaçınmak için evde kalmaya karar verdi."
     },
     {
       "id": 1112,
       "categoryId": 5,
       "ENG": "emerge",
-      "TR": "ortaya çıkmak"
+      "TR": "ortaya çıkmak",
+      "ipa": "/ɪˈmɜːdʒ/",
+      "pos": "verb",
+      "ex1": "She watched the sun emerge from behind the clouds.",
+      "ex1_tr": "Güneşin bulutların arkasından ortaya çıkışını izledi.",
+      "ex2": "New details of the scandal began to emerge.",
+      "ex2_tr": "Skandalın yeni detayları ortaya çıkmaya başladı."
     },
     {
       "id": 1113,
       "categoryId": 5,
       "ENG": "emergency",
-      "TR": "acil Durum"
+      "TR": "acil Durum",
+      "ipa": "/ɪˈmɜːdʒənsi/",
+      "pos": "noun",
+      "ex1": "In case of emergency, please dial 911 immediately.",
+      "ex1_tr": "Acil bir durumda lütfen derhal 911'i arayın.",
+      "ex2": "The pilot made an emergency landing in a field.",
+      "ex2_tr": "Pilot, bir tarlaya acil iniş yaptı."
     },
     {
       "id": 1114,
       "categoryId": 5,
       "ENG": "emotion",
-      "TR": "duygu"
+      "TR": "duygu",
+      "ipa": "/ɪˈməʊʃn/",
+      "pos": "noun",
+      "ex1": "Love is a very powerful emotion.",
+      "ex1_tr": "Aşk çok güçlü bir duygudur.",
+      "ex2": "He struggled to control his emotions during the speech.",
+      "ex2_tr": "Konuşma sırasında duygularını kontrol etmekte zorlandı."
     },
     {
       "id": 1115,
       "categoryId": 5,
       "ENG": "emotional",
-      "TR": "duygusal"
+      "TR": "duygusal",
+      "ipa": "/ɪˈməʊʃənl/",
+      "pos": "adjective",
+      "ex1": "The reunion was a highly emotional moment for the family.",
+      "ex1_tr": "Yeniden bir araya gelme, aile için son derece duygusal bir andı.",
+      "ex2": "He gave an emotional speech about his late grandmother.",
+      "ex2_tr": "Vefat eden büyükannesi hakkında duygusal bir konuşma yaptı."
     },
     {
       "id": 1116,
       "categoryId": 5,
       "ENG": "emotionally",
-      "TR": "duygusal yönden"
+      "TR": "duygusal yönden",
+      "ipa": "/ɪˈməʊʃənəli/",
+      "pos": "adverb",
+      "ex1": "She was emotionally exhausted after the long trial.",
+      "ex1_tr": "Uzun davadan sonra duygusal yönden tükenmişti.",
+      "ex2": "The movie is emotionally draining to watch.",
+      "ex2_tr": "Filmi izlemek duygusal açıdan yıpratıcıdır."
     },
     {
       "id": 1117,
       "categoryId": 5,
       "ENG": "emphasis",
-      "TR": "vurgu"
+      "TR": "vurgu",
+      "ipa": "/ˈemfəsɪs/",
+      "pos": "noun",
+      "ex1": "The school puts a strong emphasis on sports and music.",
+      "ex1_tr": "Okul, spor ve müziğe güçlü bir vurgu yapmaktadır.",
+      "ex2": "He placed the emphasis on the first syllable of the word.",
+      "ex2_tr": "Vurguyu kelimenin ilk hecesine yaptı."
     },
     {
       "id": 1118,
       "categoryId": 5,
       "ENG": "emphasize",
-      "TR": "vurgulamak"
+      "TR": "vurgulamak",
+      "ipa": "/ˈemfəsaɪz/",
+      "pos": "verb",
+      "ex1": "I must emphasize that this is only a temporary solution.",
+      "ex1_tr": "Bunun yalnızca geçici bir çözüm olduğunu vurgulamalıyım.",
+      "ex2": "The report serves to emphasize the need for more funding.",
+      "ex2_tr": "Rapor, daha fazla fon sağlanması ihtiyacını vurgulamaya yarıyor."
     },
     {
       "id": 1119,
       "categoryId": 5,
       "ENG": "empire",
-      "TR": "imparatorluk"
+      "TR": "imparatorluk",
+      "ipa": "/ˈempaɪə(r)/",
+      "pos": "noun",
+      "ex1": "The Roman Empire stretched across Europe and the Middle East.",
+      "ex1_tr": "Roma İmparatorluğu, Avrupa ve Orta Doğu'ya yayıldı.",
+      "ex2": "He built a massive business empire in just ten years.",
+      "ex2_tr": "Sadece on yılda devasa bir iş imparatorluğu kurdu."
     },
     {
       "id": 1120,
       "categoryId": 5,
       "ENG": "employ",
-      "TR": "kullanmak"
+      "TR": "kullanmak",
+      "ipa": "/ɪmˈplɔɪ/",
+      "pos": "verb",
+      "ex1": "The company aims to employ more local people.",
+      "ex1_tr": "Şirket, daha fazla yerel insanı istihdam etmeyi amaçlıyor.",
+      "ex2": "Doctors employ various methods to diagnose this disease.",
+      "ex2_tr": "Doktorlar bu hastalığı teşhis etmek için çeşitli yöntemler kullanırlar."
     },
     {
       "id": 1121,
       "categoryId": 5,
       "ENG": "employee",
-      "TR": "işçi"
+      "TR": "işçi",
+      "ipa": "/ɪmˈplɔɪiː/",
+      "pos": "noun",
+      "ex1": "Every employee is entitled to four weeks of paid holiday.",
+      "ex1_tr": "Her çalışan, dört haftalık ücretli izin hakkına sahiptir.",
+      "ex2": "She is a valuable employee who always works hard.",
+      "ex2_tr": "O, her zaman çok çalışan değerli bir işçidir."
     },
     {
       "id": 1122,
       "categoryId": 5,
       "ENG": "employer",
-      "TR": "işveren"
+      "TR": "işveren",
+      "ipa": "/ɪmˈplɔɪə(r)/",
+      "pos": "noun",
+      "ex1": "He was a generous employer who paid his staff well.",
+      "ex1_tr": "Personeline iyi ödeme yapan cömert bir işverendi.",
+      "ex2": "The new law aims to protect workers from unfair treatment by their employer.",
+      "ex2_tr": "Yeni yasa, işçileri işverenlerinin haksız muamelelerinden korumayı amaçlıyor."
     },
     {
       "id": 1123,
       "categoryId": 5,
       "ENG": "employment",
-      "TR": "iş"
+      "TR": "iş",
+      "ipa": "/ɪmˈplɔɪmənt/",
+      "pos": "noun",
+      "ex1": "Finding full-time employment can be very difficult.",
+      "ex1_tr": "Tam zamanlı bir iş bulmak çok zor olabilir.",
+      "ex2": "The government is working on increasing employment in the region.",
+      "ex2_tr": "Hükümet, bölgedeki istihdamı artırmak için çalışıyor."
     },
     {
       "id": 1124,
       "categoryId": 5,
       "ENG": "empty",
-      "TR": "boş"
+      "TR": "boş",
+      "ipa": "/ˈempti/",
+      "pos": "adjective",
+      "ex1": "The glass was half empty when he left.",
+      "ex1_tr": "O gittiğinde bardak yarı yarıya boştu.",
+      "ex2": "The streets were completely empty at midnight.",
+      "ex2_tr": "Gece yarısı sokaklar tamamen boştu."
     },
     {
       "id": 1125,
       "categoryId": 5,
       "ENG": "enable",
-      "TR": "etkinleştirme"
+      "TR": "etkinleştirme",
+      "ipa": "/ɪˈneɪbl/",
+      "pos": "verb",
+      "ex1": "This new technology will enable us to work much faster.",
+      "ex1_tr": "Bu yeni teknoloji, çok daha hızlı çalışmamıza olanak sağlayacak.",
+      "ex2": "You must enable cookies in your browser to view this website.",
+      "ex2_tr": "Bu web sitesini görüntülemek için tarayıcınızda çerezleri etkinleştirmeniz gerekir."
     },
     {
       "id": 1126,
       "categoryId": 5,
       "ENG": "encounter",
-      "TR": "karşılaşma"
+      "TR": "karşılaşma",
+      "ipa": "/ɪnˈkaʊntə(r)/",
+      "pos": "verb",
+      "ex1": "I had never encountered such a difficult problem before.",
+      "ex1_tr": "Daha önce hiç bu kadar zor bir sorunla karşılaşmamıştım.",
+      "ex2": "They encountered several delays during their journey.",
+      "ex2_tr": "Yolculukları sırasında birkaç gecikmeyle karşılaştılar."
     },
     {
       "id": 1127,
       "categoryId": 5,
       "ENG": "encourage",
-      "TR": "teşvik etmek"
+      "TR": "teşvik etmek",
+      "ipa": "/ɪnˈkʌrɪdʒ/",
+      "pos": "verb",
+      "ex1": "Parents should encourage their children to read more.",
+      "ex1_tr": "Ebeveynler, çocuklarını daha fazla okumaya teşvik etmelidir.",
+      "ex2": "The government wants to encourage small businesses.",
+      "ex2_tr": "Hükümet küçük işletmeleri teşvik etmek istiyor."
     },
     {
       "id": 1128,
       "categoryId": 5,
       "ENG": "encouragement",
-      "TR": "teşvik"
+      "TR": "teşvik",
+      "ipa": "/ɪnˈkʌrɪdʒmənt/",
+      "pos": "noun",
+      "ex1": "With a little encouragement, she began to paint again.",
+      "ex1_tr": "Biraz teşvikle, yeniden resim yapmaya başladı.",
+      "ex2": "Her teacher gave her words of encouragement before the exam.",
+      "ex2_tr": "Öğretmeni, sınavdan önce ona teşvik edici sözler söyledi."
     },
     {
       "id": 1129,
       "categoryId": 5,
       "ENG": "end",
-      "TR": "son"
+      "TR": "son",
+      "ipa": "/end/",
+      "pos": "noun",
+      "ex1": "I watched the movie until the very end.",
+      "ex1_tr": "Filmi sonuna kadar izledim.",
+      "ex2": "There is a small park at the end of the street.",
+      "ex2_tr": "Sokağın sonunda küçük bir park var."
     },
     {
       "id": 1130,
       "categoryId": 5,
       "ENG": "end in",
-      "TR": "sona"
+      "TR": "sona",
+      "ipa": "/end ɪn/",
+      "pos": "phrasal verb",
+      "ex1": "The match is likely to end in a draw.",
+      "ex1_tr": "Maçın berabere bitmesi muhtemel görünüyor.",
+      "ex2": "His relationship with her did not end in marriage.",
+      "ex2_tr": "Onunla olan ilişkisi evlilikle sonuçlanmadı."
     },
     {
       "id": 1131,
       "categoryId": 5,
       "ENG": "ending",
-      "TR": "bitirme"
+      "TR": "bitirme",
+      "ipa": "/ˈendɪŋ/",
+      "pos": "noun",
+      "ex1": "The book has a very happy ending.",
+      "ex1_tr": "Kitabın çok mutlu bir sonu var.",
+      "ex2": "I didn't like the ending of the film.",
+      "ex2_tr": "Filmin sonunu beğenmedim."
     },
     {
       "id": 1132,
       "categoryId": 5,
       "ENG": "end up",
-      "TR": "sonuçlanmak"
+      "TR": "sonuçlanmak",
+      "ipa": "/end ʌp/",
+      "pos": "phrasal verb",
+      "ex1": "If you don't study, you will end up failing the exam.",
+      "ex1_tr": "Çalışmazsan, sonunda sınavda başarısız olursun.",
+      "ex2": "They took a wrong turn and ended up in the wrong town.",
+      "ex2_tr": "Yanlış yola saptılar ve kendilerini yanlış kasabada buldular."
     },
     {
       "id": 1133,
       "categoryId": 5,
       "ENG": "enemy",
-      "TR": "düşman"
+      "TR": "düşman",
+      "ipa": "/ˈenəmi/",
+      "pos": "noun",
+      "ex1": "He made a lot of enemies during his time in power.",
+      "ex1_tr": "İktidarda olduğu süre boyunca çok sayıda düşman edindi.",
+      "ex2": "The soldiers defended the city against the enemy.",
+      "ex2_tr": "Askerler şehri düşmana karşı savundu."
     },
     {
       "id": 1134,
       "categoryId": 5,
       "ENG": "energy",
-      "TR": "enerji"
+      "TR": "enerji",
+      "ipa": "/ˈenədʒi/",
+      "pos": "noun",
+      "ex1": "Children have so much energy and never seem to get tired.",
+      "ex1_tr": "Çocukların o kadar çok enerjisi var ki hiç yorulmuyor gibi görünüyorlar.",
+      "ex2": "We need to find new sources of clean energy.",
+      "ex2_tr": "Yeni temiz enerji kaynakları bulmamız gerekiyor."
     },
     {
       "id": 1135,
       "categoryId": 5,
       "ENG": "engage",
-      "TR": "Tut"
+      "TR": "Tut",
+      "ipa": "/ɪnˈɡeɪdʒ/",
+      "pos": "verb",
+      "ex1": "The toy is designed to engage children's imagination.",
+      "ex1_tr": "Oyuncak, çocukların hayal gücünü harekete geçirmek için tasarlanmıştır.",
+      "ex2": "He failed to engage the audience with his presentation.",
+      "ex2_tr": "Sunumuyla izleyicilerin ilgisini çekmeyi başaramadı."
     },
     {
       "id": 1136,
       "categoryId": 5,
       "ENG": "engaged",
-      "TR": "nişanlı"
+      "TR": "nişanlı",
+      "ipa": "/ɪnˈɡeɪdʒd/",
+      "pos": "adjective",
+      "ex1": "They got engaged last month and plan to marry next year.",
+      "ex1_tr": "Geçen ay nişanlandılar ve gelecek yıl evlenmeyi planlıyorlar.",
+      "ex2": "She was wearing her engagement ring on her left hand.",
+      "ex2_tr": "Sol eline nişan yüzüğünü takıyordu."
     },
     {
       "id": 1137,
       "categoryId": 5,
       "ENG": "engine",
-      "TR": "motor"
+      "TR": "motor",
+      "ipa": "/ˈendʒɪn/",
+      "pos": "noun",
+      "ex1": "The car's engine suddenly stopped running.",
+      "ex1_tr": "Arabanın motoru aniden durdu.",
+      "ex2": "He has a lot of knowledge about aircraft engines.",
+      "ex2_tr": "Uçak motorları hakkında çok fazla bilgisi var."
     },
     {
       "id": 1138,
       "categoryId": 5,
       "ENG": "engineer",
-      "TR": "mühendis"
+      "TR": "mühendis",
+      "ipa": "/ˌendʒɪˈnɪə(r)/",
+      "pos": "noun",
+      "ex1": "He works as a software engineer for a tech company.",
+      "ex1_tr": "Bir teknoloji şirketinde yazılım mühendisi olarak çalışıyor.",
+      "ex2": "The civil engineer inspected the bridge for safety.",
+      "ex2_tr": "İnşaat mühendisi, güvenlik açısından köprüyü denetledi."
     },
     {
       "id": 1139,
       "categoryId": 5,
       "ENG": "engineering",
-      "TR": "mühendislik"
+      "TR": "mühendislik",
+      "ipa": "/ˌendʒɪˈnɪərɪŋ/",
+      "pos": "noun",
+      "ex1": "She decided to study chemical engineering at university.",
+      "ex1_tr": "Üniversitede kimya mühendisliği okumaya karar verdi.",
+      "ex2": "This bridge is a magnificent piece of engineering.",
+      "ex2_tr": "Bu köprü, muhteşem bir mühendislik eseridir."
     },
     {
       "id": 1140,
       "categoryId": 5,
       "ENG": "enjoy",
-      "TR": "zevk almak"
+      "TR": "zevk almak",
+      "ipa": "/ɪnˈdʒɔɪ/",
+      "pos": "verb",
+      "ex1": "I hope you enjoy your stay at our hotel.",
+      "ex1_tr": "Otelimizdeki konaklamanızın tadını çıkarmanızı umarım.",
+      "ex2": "She enjoys reading historical novels in her free time.",
+      "ex2_tr": "Boş zamanlarında tarihi romanlar okumaktan zevk alır."
     },
     {
       "id": 1141,
       "categoryId": 5,
       "ENG": "enjoyable",
-      "TR": "zevkli"
+      "TR": "zevkli",
+      "ipa": "/ɪnˈdʒɔɪəbl/",
+      "pos": "adjective",
+      "ex1": "We had a very enjoyable evening with our friends.",
+      "ex1_tr": "Arkadaşlarımızla çok zevkli bir akşam geçirdik.",
+      "ex2": "The course made learning French very enjoyable.",
+      "ex2_tr": "Kurs, Fransızca öğrenmeyi çok keyifli hale getirdi."
     },
     {
       "id": 1142,
       "categoryId": 5,
       "ENG": "enjoyment",
-      "TR": "hoşlanma"
+      "TR": "hoşlanma",
+      "ipa": "/ɪnˈdʒɔɪmənt/",
+      "pos": "noun",
+      "ex1": "He gets a lot of enjoyment from gardening.",
+      "ex1_tr": "Bahçe işleriyle uğraşmaktan büyük keyif alıyor.",
+      "ex2": "The noisy crowd spoiled our enjoyment of the movie.",
+      "ex2_tr": "Gürültülü kalabalık, filmden aldığımız keyfi mahvetti."
     },
     {
       "id": 1143,
       "categoryId": 5,
       "ENG": "enormous",
-      "TR": "muazzam"
+      "TR": "muazzam",
+      "ipa": "/ɪˈnɔːməs/",
+      "pos": "adjective",
+      "ex1": "The project took an enormous amount of time and effort.",
+      "ex1_tr": "Proje muazzam miktarda zaman ve çaba gerektirdi.",
+      "ex2": "They live in an enormous house in the countryside.",
+      "ex2_tr": "Kırsal kesimde kocaman bir evde yaşıyorlar."
     },
     {
       "id": 1144,
       "categoryId": 5,
       "ENG": "enough",
-      "TR": "yeter"
+      "TR": "yeter",
+      "ipa": "/ɪˈnʌf/",
+      "pos": "determiner",
+      "ex1": "Do we have enough food for all the guests?",
+      "ex1_tr": "Tüm konuklar için yeterli yiyeceğimiz var mı?",
+      "ex2": "He didn't work hard enough to pass the test.",
+      "ex2_tr": "Sınavı geçecek kadar sıkı çalışmadı."
     },
     {
       "id": 1145,
       "categoryId": 5,
       "ENG": "enquiry",
-      "TR": "soruşturma"
+      "TR": "soruşturma",
+      "ipa": "/ɪnˈkwaɪəri/",
+      "pos": "noun",
+      "ex1": "We receive many enquiries about our services every day.",
+      "ex1_tr": "Her gün hizmetlerimiz hakkında birçok bilgi talebi alıyoruz.",
+      "ex2": "The police have launched an enquiry into the robbery.",
+      "ex2_tr": "Polis, soygunla ilgili bir soruşturma başlattı."
     },
     {
       "id": 1146,
       "categoryId": 5,
       "ENG": "ensure",
-      "TR": "sağlamak"
+      "TR": "sağlamak",
+      "ipa": "/ɪnˈʃɔː(r)/",
+      "pos": "verb",
+      "ex1": "Please ensure all doors are locked before you leave.",
+      "ex1_tr": "Lütfen ayrılmadan önce tüm kapıların kilitli olduğundan emin olun.",
+      "ex2": "This insurance will ensure your financial security.",
+      "ex2_tr": "Bu sigorta, mali güvenliğinizi sağlayacaktır."
     },
     {
       "id": 1147,
       "categoryId": 5,
       "ENG": "enter",
-      "TR": "giriş"
+      "TR": "giriş",
+      "ipa": "/ˈɛntə(r)/",
+      "pos": "verb",
+      "ex1": "Please enter your password to access your account.",
+      "ex1_tr": "Hesabınıza erişmek için lütfen şifrenizi girin.",
+      "ex2": "We watched the car enter the garage.",
+      "ex2_tr": "Arabanın garaja girdiğini izledik."
     },
     {
       "id": 1148,
       "categoryId": 5,
       "ENG": "entertain",
-      "TR": "eğlendirmek"
+      "TR": "eğlendirmek",
+      "ipa": "/ˌɛntəˈteɪn/",
+      "pos": "verb",
+      "ex1": "The clown tried to entertain the children with tricks.",
+      "ex1_tr": "Palyaço, hilelerle çocukları eğlendirmeye çalıştı.",
+      "ex2": "They entertained guests with music and good food.",
+      "ex2_tr": "Misafirleri müzik ve güzel yemeklerle ağırladılar."
     },
     {
       "id": 1149,
       "categoryId": 5,
       "ENG": "entertainer",
-      "TR": "şovmen"
+      "TR": "şovmen",
+      "ipa": "/ˌɛntəˈteɪnə(r)/",
+      "pos": "noun",
+      "ex1": "The entertainer performed magic tricks for the audience.",
+      "ex1_tr": "Şovmen, izleyiciler için sihirbazlık numaraları yaptı.",
+      "ex2": "She dreams of becoming a famous entertainer.",
+      "ex2_tr": "Ünlü bir şovmen olmayı hayal ediyor."
     },
     {
       "id": 1150,
       "categoryId": 5,
       "ENG": "entertaining",
-      "TR": "eğlenceli"
+      "TR": "eğlenceli",
+      "ipa": "/ˌɛntəˈteɪnɪŋ/",
+      "pos": "adjective",
+      "ex1": "That movie was very entertaining, I enjoyed it a lot.",
+      "ex1_tr": "O film çok eğlenceliydi, çok beğendim.",
+      "ex2": "He has an entertaining way of telling stories.",
+      "ex2_tr": "Hikaye anlatma konusunda eğlenceli bir tarzı var."
     },
     {
       "id": 1151,
       "categoryId": 5,
       "ENG": "entertainment",
-      "TR": "eğlence"
+      "TR": "eğlence",
+      "ipa": "/ˌɛntəˈteɪnmənt/",
+      "pos": "noun",
+      "ex1": "There was live entertainment at the restaurant last night.",
+      "ex1_tr": "Dün gece restoranda canlı eğlence vardı.",
+      "ex2": "The festival offered a variety of entertainment for all ages.",
+      "ex2_tr": "Festival, her yaş için çeşitli eğlence olanakları sunuyordu."
     },
     {
       "id": 1152,
       "categoryId": 5,
       "ENG": "enthusiasm",
-      "TR": "coşku"
+      "TR": "coşku",
+      "ipa": "/ɪnˈθjuːziæzəm/",
+      "pos": "noun",
+      "ex1": "Her enthusiasm for the project was infectious.",
+      "ex1_tr": "Projeye olan coşkusu bulaşıcıydı.",
+      "ex2": "He showed great enthusiasm for learning new things.",
+      "ex2_tr": "Yeni şeyler öğrenmeye büyük bir şevk gösterdi."
     },
     {
       "id": 1153,
       "categoryId": 5,
       "ENG": "enthusiastic",
-      "TR": "hevesli"
+      "TR": "hevesli",
+      "ipa": "/ɪnˌθjuːziˈæstɪk/",
+      "pos": "adjective",
+      "ex1": "The team was enthusiastic about the upcoming game.",
+      "ex1_tr": "Takım, yaklaşan maç konusunda hevesliydi.",
+      "ex2": "She is an enthusiastic supporter of environmental causes.",
+      "ex2_tr": "Çevre davalarının hevesli bir destekçisidir."
     },
     {
       "id": 1154,
       "categoryId": 5,
       "ENG": "enthusiastically",
-      "TR": "şevkle"
+      "TR": "şevkle",
+      "ipa": "/ɪnˌθjuːziˈæstɪkli/",
+      "pos": "adverb",
+      "ex1": "He greeted the news enthusiastically.",
+      "ex1_tr": "Haberi şevkle karşıladı.",
+      "ex2": "The children enthusiastically participated in the game.",
+      "ex2_tr": "Çocuklar oyuna coşkuyla katıldı."
     },
     {
       "id": 1155,
       "categoryId": 5,
       "ENG": "entire",
-      "TR": "tüm"
+      "TR": "tüm",
+      "ipa": "/ɪnˈtaɪə(r)/",
+      "pos": "adjective",
+      "ex1": "The entire class passed the exam.",
+      "ex1_tr": "Tüm sınıf sınavı geçti.",
+      "ex2": "We spent the entire day at the beach.",
+      "ex2_tr": "Tüm günü plajda geçirdik."
     },
     {
       "id": 1156,
       "categoryId": 5,
       "ENG": "entirely",
-      "TR": "Baştan sona"
+      "TR": "Baştan sona",
+      "ipa": "/ɪnˈtaɪəli/",
+      "pos": "adverb",
+      "ex1": "I'm not entirely sure what you mean.",
+      "ex1_tr": "Ne demek istediğinizden tamamen emin değilim.",
+      "ex2": "The situation is entirely different now.",
+      "ex2_tr": "Durum şimdi tamamen farklı."
     },
     {
       "id": 1157,
       "categoryId": 5,
       "ENG": "entitle",
-      "TR": "baslığı"
+      "TR": "baslığı",
+      "ipa": "/ɪnˈtaɪtl/",
+      "pos": "verb",
+      "ex1": "Being a member entitles you to a discount.",
+      "ex1_tr": "Üye olmak size indirim hakkı verir.",
+      "ex2": "The book was entitled 'The History of Art'.",
+      "ex2_tr": "Kitabın başlığı 'Sanat Tarihi' idi."
     },
     {
       "id": 1158,
       "categoryId": 5,
       "ENG": "entrance 1",
-      "TR": "giriş 1"
+      "TR": "giriş 1",
+      "ipa": "/ˈɛntrəns/",
+      "pos": "noun",
+      "ex1": "The main entrance to the building is on the left.",
+      "ex1_tr": "Binanın ana girişi soldadır.",
+      "ex2": "We waited at the entrance for our friends.",
+      "ex2_tr": "Arkadaşlarımızı girişte bekledik."
     },
     {
       "id": 1159,
       "categoryId": 5,
       "ENG": "entry",
-      "TR": "giriş"
+      "TR": "giriş",
+      "ipa": "/ˈɛntri/",
+      "pos": "noun",
+      "ex1": "No entry without a valid ticket.",
+      "ex1_tr": "Geçerli bilet olmadan giriş yasaktır.",
+      "ex2": "The entry fee for the museum is 10 euros.",
+      "ex2_tr": "Müzenin giriş ücreti 10 avrodur."
     },
     {
       "id": 1160,
       "categoryId": 5,
       "ENG": "envelope",
-      "TR": "zarf"
+      "TR": "zarf",
+      "ipa": "/ˈɛnvələʊp/",
+      "pos": "noun",
+      "ex1": "She sealed the letter in an envelope.",
+      "ex1_tr": "Mektubu bir zarfa koyup kapattı.",
+      "ex2": "Please write your address on the back of the envelope.",
+      "ex2_tr": "Lütfen adresinizi zarfın arkasına yazın."
     },
     {
       "id": 1161,
       "categoryId": 5,
       "ENG": "environment",
-      "TR": "çevre"
+      "TR": "çevre",
+      "ipa": "/ɪnˈvaɪərən mənt/",
+      "pos": "noun",
+      "ex1": "We need to protect our natural environment.",
+      "ex1_tr": "Doğal çevremizi korumamız gerekiyor.",
+      "ex2": "A healthy working environment is important for productivity.",
+      "ex2_tr": "Sağlıklı bir çalışma ortamı verimlilik için önemlidir."
     },
     {
       "id": 1162,
       "categoryId": 5,
       "ENG": "environmental",
-      "TR": "çevre"
+      "TR": "çevre",
+      "ipa": "/ɪnˌvaɪərənˈmɛntl/",
+      "pos": "adjective",
+      "ex1": "Environmental issues are a major concern today.",
+      "ex1_tr": "Çevre sorunları bugün önemli bir endişe kaynağıdır.",
+      "ex2": "The company is committed to reducing its environmental impact.",
+      "ex2_tr": "Şirket, çevresel etkisini azaltmaya kararlıdır."
     },
     {
       "id": 1163,
       "categoryId": 5,
       "ENG": "equal",
-      "TR": "eşit"
+      "TR": "eşit",
+      "ipa": "/ˈiːkwəl/",
+      "pos": "adjective",
+      "ex1": "All people should have equal rights.",
+      "ex1_tr": "Tüm insanlar eşit haklara sahip olmalıdır.",
+      "ex2": "Five plus five is equal to ten.",
+      "ex2_tr": "Beş artı beş ona eşittir."
     },
     {
       "id": 1164,
       "categoryId": 5,
       "ENG": "equally",
-      "TR": "aynı derecede"
+      "TR": "aynı derecede",
+      "ipa": "/ˈiːkwəli/",
+      "pos": "adverb",
+      "ex1": "She treated all her children equally.",
+      "ex1_tr": "Tüm çocuklarına eşit davrandı.",
+      "ex2": "It is equally important to listen as it is to speak.",
+      "ex2_tr": "Konuşmak kadar dinlemek de aynı derecede önemlidir."
     },
     {
       "id": 1165,
       "categoryId": 5,
       "ENG": "equipment",
-      "TR": "ekipman"
+      "TR": "ekipman",
+      "ipa": "/ɪˈkwɪpmənt/",
+      "pos": "noun",
+      "ex1": "We need new equipment for the laboratory.",
+      "ex1_tr": "Laboratuvar için yeni ekipmana ihtiyacımız var.",
+      "ex2": "Always check your safety equipment before starting work.",
+      "ex2_tr": "İşe başlamadan önce daima güvenlik ekipmanınızı kontrol edin."
     },
     {
       "id": 1166,
       "categoryId": 5,
       "ENG": "equivalent",
-      "TR": "eşdeğer"
+      "TR": "eşdeğer",
+      "ipa": "/ɪˈkwɪvələnt/",
+      "pos": "adjective",
+      "ex1": "One US dollar is approximately equivalent to 32 Turkish Lira.",
+      "ex1_tr": "Bir ABD doları yaklaşık olarak 32 Türk Lirası'na eşdeğerdir.",
+      "ex2": "Spending time with family is equivalent to a short vacation for me.",
+      "ex2_tr": "Ailemle vakit geçirmek benim için kısa bir tatile eşdeğerdir."
     },
     {
       "id": 1167,
       "categoryId": 5,
       "ENG": "error",
-      "TR": "hata"
+      "TR": "hata",
+      "ipa": "/ˈɛrə(r)/",
+      "pos": "noun",
+      "ex1": "There was an error in the calculation.",
+      "ex1_tr": "Hesaplamada bir hata vardı.",
+      "ex2": "The software reported an unexpected error.",
+      "ex2_tr": "Yazılım beklenmedik bir hata bildirdi."
     },
     {
       "id": 1168,
       "categoryId": 5,
       "ENG": "escape",
-      "TR": "kaçış"
+      "TR": "kaçış",
+      "ipa": "/ɪˈskeɪp/",
+      "pos": "verb",
+      "ex1": "The prisoner managed to escape from jail.",
+      "ex1_tr": "Mahkum hapishaneden kaçmayı başardı.",
+      "ex2": "We need to escape the heat and find some shade.",
+      "ex2_tr": "Sıcaktan kaçıp biraz gölge bulmalıyız."
     },
     {
       "id": 1169,
       "categoryId": 5,
       "ENG": "especially",
-      "TR": "özellikle"
+      "TR": "özellikle",
+      "ipa": "/ɪˈspɛʃəli/",
+      "pos": "adverb",
+      "ex1": "I love all fruits, especially strawberries.",
+      "ex1_tr": "Tüm meyveleri severim, özellikle çileği.",
+      "ex2": "He was especially pleased with the results.",
+      "ex2_tr": "Sonuçlardan özellikle memnun kalmıştı."
     },
     {
       "id": 1170,
       "categoryId": 5,
       "ENG": "essay",
-      "TR": "makale"
+      "TR": "makale",
+      "ipa": "/ˈɛseɪ/",
+      "pos": "noun",
+      "ex1": "She had to write an essay on climate change.",
+      "ex1_tr": "İklim değişikliği hakkında bir makale yazması gerekiyordu.",
+      "ex2": "His essay received the highest grade in the class.",
+      "ex2_tr": "Makalesi sınıftaki en yüksek notu aldı."
     },
     {
       "id": 1171,
       "categoryId": 5,
       "ENG": "essential",
-      "TR": "gerekli"
+      "TR": "gerekli",
+      "ipa": "/ɪˈsɛnʃl/",
+      "pos": "adjective",
+      "ex1": "Water is essential for all living things.",
+      "ex1_tr": "Su, tüm canlılar için gereklidir.",
+      "ex2": "It's essential that you arrive on time.",
+      "ex2_tr": "Tam zamanında varmanız çok önemlidir."
     },
     {
       "id": 1172,
       "categoryId": 5,
       "ENG": "essentially",
-      "TR": "esasen"
+      "TR": "esasen",
+      "ipa": "/ɪˈsɛnʃəli/",
+      "pos": "adverb",
+      "ex1": "Essentially, the problem is a lack of communication.",
+      "ex1_tr": "Esasen, sorun iletişim eksikliğidir.",
+      "ex2": "The two plans are essentially the same.",
+      "ex2_tr": "İki plan esasen aynıdır."
     },
     {
       "id": 1173,
       "categoryId": 5,
       "ENG": "establish",
-      "TR": "kurmak"
+      "TR": "kurmak",
+      "ipa": "/ɪˈstæblɪʃ/",
+      "pos": "verb",
+      "ex1": "The company was established in 1990.",
+      "ex1_tr": "Şirket 1990 yılında kuruldu.",
+      "ex2": "They need to establish a clear set of rules.",
+      "ex2_tr": "Açık bir kurallar dizisi oluşturmaları gerekiyor."
     },
     {
       "id": 1174,
       "categoryId": 5,
       "ENG": "estate",
-      "TR": "arazi"
+      "TR": "arazi",
+      "ipa": "/ɪˈsteɪt/",
+      "pos": "noun",
+      "ex1": "He inherited a large country estate.",
+      "ex1_tr": "Büyük bir kır mülkü miras kaldı.",
+      "ex2": "The real estate market is booming.",
+      "ex2_tr": "Emlak piyasası patlama yaşıyor."
     },
     {
       "id": 1175,
       "categoryId": 5,
       "ENG": "estimate",
-      "TR": "tahmin"
+      "TR": "tahmin",
+      "ipa": "/ˈɛstɪmət/",
+      "pos": "noun",
+      "ex1": "Can you give me an estimate of the cost?",
+      "ex1_tr": "Bana maliyet tahmini verebilir misiniz?",
+      "ex2": "The initial estimate was much lower than the final price.",
+      "ex2_tr": "İlk tahmin, nihai fiyattan çok daha düşüktü."
     },
     {
       "id": 1176,
       "categoryId": 5,
       "ENG": "etc.",
-      "TR": "vb."
+      "TR": "vb.",
+      "ipa": "/ɪtˈsɛtərə/",
+      "pos": "abbreviation",
+      "ex1": "We bought apples, bananas, oranges, etc.",
+      "ex1_tr": "Elma, muz, portakal vb. aldık.",
+      "ex2": "The list includes books, pens, paper, etc.",
+      "ex2_tr": "Liste kitaplar, kalemler, kağıt vb. içerir."
     },
     {
       "id": 1177,
       "categoryId": 5,
       "ENG": "euro",
-      "TR": "euro"
+      "TR": "euro",
+      "ipa": "/ˈjʊərəʊ/",
+      "pos": "noun",
+      "ex1": "The price is ten euros.",
+      "ex1_tr": "Fiyat on avro.",
+      "ex2": "Do you have any euro coins?",
+      "ex2_tr": "Avro bozukluğunuz var mı?"
     },
     {
       "id": 1178,
       "categoryId": 5,
       "ENG": "even",
-      "TR": "hatta"
+      "TR": "hatta",
+      "ipa": "/ˈiːvn/",
+      "pos": "adverb",
+      "ex1": "He didn't even say goodbye.",
+      "ex1_tr": "Veda bile etmedi.",
+      "ex2": "Even though it was raining, we went for a walk.",
+      "ex2_tr": "Yağmur yağıyor olmasına rağmen yürüyüşe çıktık."
     },
     {
       "id": 1179,
       "categoryId": 5,
       "ENG": "evening",
-      "TR": "akşam"
+      "TR": "akşam",
+      "ipa": "/ˈiːvnɪŋ/",
+      "pos": "noun",
+      "ex1": "We're going out this evening.",
+      "ex1_tr": "Bu akşam dışarı çıkıyoruz.",
+      "ex2": "Good evening, how can I help you?",
+      "ex2_tr": "İyi akşamlar, nasıl yardımcı olabilirim?"
     },
     {
       "id": 1180,
       "categoryId": 5,
       "ENG": "event",
-      "TR": "Etkinlik"
+      "TR": "Etkinlik",
+      "ipa": "/ɪˈvɛnt/",
+      "pos": "noun",
+      "ex1": "The concert was a major event for the city.",
+      "ex1_tr": "Konser şehir için büyük bir olaydı.",
+      "ex2": "We organize various charity events throughout the year.",
+      "ex2_tr": "Yıl boyunca çeşitli hayır etkinlikleri düzenliyoruz."
     },
     {
       "id": 1181,
       "categoryId": 5,
       "ENG": "eventually",
-      "TR": "Sonuçta"
+      "TR": "Sonuçta",
+      "ipa": "/ɪˈvɛnʧuəli/",
+      "pos": "adverb",
+      "ex1": "After many delays, the plane eventually took off.",
+      "ex1_tr": "Birçok gecikmeden sonra uçak sonunda havalandı.",
+      "ex2": "He eventually realized his mistake.",
+      "ex2_tr": "Hatanı sonunda anladı."
     },
     {
       "id": 1182,
       "categoryId": 5,
       "ENG": "ever",
-      "TR": "hiç"
+      "TR": "hiç",
+      "ipa": "/ˈɛvə(r)/",
+      "pos": "adverb",
+      "ex1": "Have you ever been to Paris?",
+      "ex1_tr": "Hiç Paris'e gittin mi?",
+      "ex2": "This is the best book I've ever read.",
+      "ex2_tr": "Bu, şimdiye kadar okuduğum en iyi kitap."
     },
     {
       "id": 1183,
       "categoryId": 5,
       "ENG": "every",
-      "TR": "her"
+      "TR": "her",
+      "ipa": "/ˈɛvri/",
+      "pos": "determiner",
+      "ex1": "Every student must complete the assignment.",
+      "ex1_tr": "Her öğrenci ödevi tamamlamalıdır.",
+      "ex2": "We go to the gym every day.",
+      "ex2_tr": "Her gün spor salonuna gidiyoruz."
     },
     {
       "id": 1184,
       "categoryId": 5,
       "ENG": "everybody",
-      "TR": "herkes"
+      "TR": "herkes",
+      "ipa": "/ˈɛvribɒdi/",
+      "pos": "pronoun",
+      "ex1": "Everybody enjoyed the party.",
+      "ex1_tr": "Partiden herkes keyif aldı.",
+      "ex2": "Is everybody ready to go?",
+      "ex2_tr": "Herkes gitmeye hazır mı?"
     },
     {
       "id": 1185,
       "categoryId": 5,
       "ENG": "everyone",
-      "TR": "herkes"
+      "TR": "herkes",
+      "ipa": "/ˈɛvriwʌn/",
+      "pos": "pronoun",
+      "ex1": "Everyone needs a place to call home.",
+      "ex1_tr": "Herkesin yuva diyebileceği bir yere ihtiyacı var.",
+      "ex2": "She waved to everyone she knew.",
+      "ex2_tr": "Tanıdığı herkese el salladı."
     },
     {
       "id": 1186,
@@ -14224,721 +14704,1441 @@
       "id": 1226,
       "categoryId": 5,
       "ENG": "expert",
-      "TR": "uzman"
+      "TR": "uzman",
+      "ipa": "/ˈekspɜːt/",
+      "pos": "noun",
+      "ex1": "She is an expert in child psychology.",
+      "ex1_tr": "Çocuk psikolojisi konusunda bir uzmandır.",
+      "ex2": "We need some expert advice before making a decision.",
+      "ex2_tr": "Karar vermeden önce uzman tavsiyesine ihtiyacımız var."
     },
     {
       "id": 1227,
       "categoryId": 5,
       "ENG": "explain",
-      "TR": "açıklamak"
+      "TR": "açıklamak",
+      "ipa": "/ɪkˈspleɪn/",
+      "pos": "verb",
+      "ex1": "Can you explain how this machine works?",
+      "ex1_tr": "Bu makinenin nasıl çalıştığını açıklayabilir misiniz?",
+      "ex2": "He tried to explain the situation to his boss.",
+      "ex2_tr": "Durumu patronuna açıklamaya çalıştı."
     },
     {
       "id": 1228,
       "categoryId": 5,
       "ENG": "explanation",
-      "TR": "açıklama"
+      "TR": "açıklama",
+      "ipa": "/ˌekspləˈneɪʃn/",
+      "pos": "noun",
+      "ex1": "Her explanation was simple and easy to understand.",
+      "ex1_tr": "Onun açıklaması basit ve anlaşılması kolaydı.",
+      "ex2": "He left the meeting without giving any explanation.",
+      "ex2_tr": "Hiçbir açıklama yapmadan toplantıdan ayrıldı."
     },
     {
       "id": 1229,
       "categoryId": 5,
       "ENG": "explode",
-      "TR": "patlamak"
+      "TR": "patlamak",
+      "ipa": "/ɪkˈspləʊd/",
+      "pos": "verb",
+      "ex1": "The bomb was designed to explode on impact.",
+      "ex1_tr": "Bomba, çarpma anında patlayacak şekilde tasarlanmıştı.",
+      "ex2": "Popcorn will explode when heated.",
+      "ex2_tr": "Mısır ısıtıldığında patlayacaktır."
     },
     {
       "id": 1230,
       "categoryId": 5,
       "ENG": "explore",
-      "TR": "keşfetmek"
+      "TR": "keşfetmek",
+      "ipa": "/ɪkˈsplɔː(r)/",
+      "pos": "verb",
+      "ex1": "We decided to explore the ancient ruins of the city.",
+      "ex1_tr": "Şehrin antik kalıntılarını keşfetmeye karar verdik.",
+      "ex2": "Scientists continue to explore the depths of the ocean.",
+      "ex2_tr": "Bilim insanları okyanusun derinliklerini keşfetmeye devam ediyor."
     },
     {
       "id": 1231,
       "categoryId": 5,
       "ENG": "explosion",
-      "TR": "patlama"
+      "TR": "patlama",
+      "ipa": "/ɪkˈspləʊʒn/",
+      "pos": "noun",
+      "ex1": "The sudden explosion shook the entire building.",
+      "ex1_tr": "Ani patlama tüm binayı sarstı.",
+      "ex2": "There was a loud explosion in the chemical plant.",
+      "ex2_tr": "Kimya tesisinde şiddetli bir patlama oldu."
     },
     {
       "id": 1232,
       "categoryId": 5,
       "ENG": "export",
-      "TR": "ihracat"
+      "TR": "ihracat",
+      "ipa": "/ˈekspɔːt/",
+      "pos": "noun",
+      "ex1": "Oil is the country's main export.",
+      "ex1_tr": "Petrol, ülkenin temel ihracat ürünüdür.",
+      "ex2": "The government is trying to boost agricultural exports.",
+      "ex2_tr": "Hükümet tarımsal ihracatı artırmaya çalışıyor."
     },
     {
       "id": 1233,
       "categoryId": 5,
       "ENG": "expose",
-      "TR": "maruz bırakmak"
+      "TR": "maruz bırakmak",
+      "ipa": "/ɪkˈspəʊz/",
+      "pos": "verb",
+      "ex1": "Do not expose the film to direct sunlight.",
+      "ex1_tr": "Filmi doğrudan güneş ışığına maruz bırakmayın.",
+      "ex2": "The reporter wanted to expose the corruption in the government.",
+      "ex2_tr": "Muhabir, hükümetteki yolsuzluğu açığa çıkarmak istedi."
     },
     {
       "id": 1234,
       "categoryId": 5,
       "ENG": "express",
-      "TR": "ekspres"
+      "TR": "ekspres",
+      "ipa": "/ɪkˈspres/",
+      "pos": "adjective",
+      "ex1": "This is an express train that does not stop at minor stations.",
+      "ex1_tr": "Bu, küçük istasyonlarda durmayan bir ekspres trendir.",
+      "ex2": "He sent the document via express mail.",
+      "ex2_tr": "Belgeyi ekspres posta yoluyla gönderdi."
     },
     {
       "id": 1235,
       "categoryId": 5,
       "ENG": "expression",
-      "TR": "ifade"
+      "TR": "ifade",
+      "ipa": "/ɪkˈspreʃn/",
+      "pos": "noun",
+      "ex1": "There was a worried expression on her face.",
+      "ex1_tr": "Yüzünde endişeli bir ifade vardı.",
+      "ex2": "\"Break a leg\" is a common English expression.",
+      "ex2_tr": "\"Break a leg\" yaygın bir İngilizce ifadedir."
     },
     {
       "id": 1236,
       "categoryId": 5,
       "ENG": "extend",
-      "TR": "uzatmak"
+      "TR": "uzatmak",
+      "ipa": "/ɪkˈstend/",
+      "pos": "verb",
+      "ex1": "The deadline was extended by two weeks.",
+      "ex1_tr": "Son teslim tarihi iki hafta uzatıldı.",
+      "ex2": "Can we extend our stay at the hotel?",
+      "ex2_tr": "Oteldeki konaklamamızı uzatabilir miyiz?"
     },
     {
       "id": 1237,
       "categoryId": 5,
       "ENG": "extension",
-      "TR": "uzantı"
+      "TR": "uzantı",
+      "ipa": "/ɪkˈstenʃn/",
+      "pos": "noun",
+      "ex1": "We are planning to build an extension to our house.",
+      "ex1_tr": "Evimize bir eklenti yapmayı planlıyoruz.",
+      "ex2": "The extension of the highway will take another year.",
+      "ex2_tr": "Otoyolun uzatılması bir yıl daha alacak."
     },
     {
       "id": 1238,
       "categoryId": 5,
       "ENG": "extensive",
-      "TR": "geniş"
+      "TR": "geniş",
+      "ipa": "/ɪkˈstensɪv/",
+      "pos": "adjective",
+      "ex1": "The storm caused extensive damage to the coastal areas.",
+      "ex1_tr": "Fırtına, kıyı bölgelerinde geniş çapta hasara yol açtı.",
+      "ex2": "He has an extensive knowledge of world history.",
+      "ex2_tr": "Dünya tarihi konusunda geniş bir bilgiye sahip."
     },
     {
       "id": 1239,
       "categoryId": 5,
       "ENG": "extent",
-      "TR": "derece"
+      "TR": "derece",
+      "ipa": "/ɪkˈstent/",
+      "pos": "noun",
+      "ex1": "We don't know the full extent of the damage yet.",
+      "ex1_tr": "Hasarın tam derecesini henüz bilmiyoruz.",
+      "ex2": "To what extent do you agree with this statement?",
+      "ex2_tr": "Bu ifadeye ne dereceye kadar katılıyorsunuz?"
     },
     {
       "id": 1240,
       "categoryId": 5,
       "ENG": "extra",
-      "TR": "ekstra"
+      "TR": "ekstra",
+      "ipa": "/ˈekstrə/",
+      "pos": "adjective",
+      "ex1": "You will have to pay an extra charge for luggage.",
+      "ex1_tr": "Bagaj için ekstra bir ücret ödemeniz gerekecek.",
+      "ex2": "She does extra work to earn some more money.",
+      "ex2_tr": "Daha fazla para kazanmak için ekstra işler yapıyor."
     },
     {
       "id": 1241,
       "categoryId": 5,
       "ENG": "extraordinary",
-      "TR": "olağanüstü"
+      "TR": "olağanüstü",
+      "ipa": "/ɪkˈstrɔːdnri/",
+      "pos": "adjective",
+      "ex1": "She has an extraordinary talent for playing the piano.",
+      "ex1_tr": "Piyano çalmak konusunda olağanüstü bir yeteneği var.",
+      "ex2": "It was an extraordinary achievement for such a young player.",
+      "ex2_tr": "Bu kadar genç bir oyuncu için olağanüstü bir başarıydı."
     },
     {
       "id": 1242,
       "categoryId": 5,
       "ENG": "extreme",
-      "TR": "aşırı"
+      "TR": "aşırı",
+      "ipa": "/ɪkˈstriːm/",
+      "pos": "adjective",
+      "ex1": "Extreme sports are becoming more popular among young people.",
+      "ex1_tr": "Aşırı sporlar gençler arasında daha popüler hale geliyor.",
+      "ex2": "The area experiences extreme temperatures during summer.",
+      "ex2_tr": "Bölge, yaz aylarında aşırı sıcaklıklar yaşamaktadır."
     },
     {
       "id": 1243,
       "categoryId": 5,
       "ENG": "extremely",
-      "TR": "son derece"
+      "TR": "son derece",
+      "ipa": "/ɪkˈstriːmli/",
+      "pos": "adverb",
+      "ex1": "The exam was extremely difficult, but she passed.",
+      "ex1_tr": "Sınav son derece zordu ama o geçti.",
+      "ex2": "We are extremely grateful for your help.",
+      "ex2_tr": "Yardımınız için son derece minnettarız."
     },
     {
       "id": 1244,
       "categoryId": 5,
       "ENG": "eye",
-      "TR": "göz"
+      "TR": "göz",
+      "ipa": "/aɪ/",
+      "pos": "noun",
+      "ex1": "She has beautiful blue eyes.",
+      "ex1_tr": "Onun güzel mavi gözleri var.",
+      "ex2": "Keep an eye on the baby while I am cooking.",
+      "ex2_tr": "Ben yemek yaparken bebeğe göz kulak ol."
     },
     {
       "id": 1245,
       "categoryId": 6,
       "ENG": "face",
-      "TR": "yüz"
+      "TR": "yüz",
+      "ipa": "/feɪs/",
+      "pos": "noun",
+      "ex1": "She washed her face with cold water.",
+      "ex1_tr": "Yüzünü soğuk suyla yıkadı.",
+      "ex2": "I saw a smile on his face.",
+      "ex2_tr": "Yüzünde bir gülümseme gördüm."
     },
     {
       "id": 1246,
       "categoryId": 6,
       "ENG": "face up to",
-      "TR": "yüzleşmek"
+      "TR": "yüzleşmek",
+      "ipa": "/feɪs ʌp tu/",
+      "pos": "verb",
+      "ex1": "You must face up to the truth eventually.",
+      "ex1_tr": "Eninde sonunda gerçekle yüzleşmelisin.",
+      "ex2": "She needs to face up to her financial problems.",
+      "ex2_tr": "Maddi sorunlarıyla yüzleşmesi gerekiyor."
     },
     {
       "id": 1247,
       "categoryId": 6,
       "ENG": "facility",
-      "TR": "tesis"
+      "TR": "tesis",
+      "ipa": "/fəˈsɪləti/",
+      "pos": "noun",
+      "ex1": "The sports facility includes a swimming pool and a gym.",
+      "ex1_tr": "Spor tesisi bir yüzme havuzu ve bir spor salonu içermektedir.",
+      "ex2": "The new hospital is a modern medical facility.",
+      "ex2_tr": "Yeni hastane modern bir tıbbi tesistir."
     },
     {
       "id": 1248,
       "categoryId": 6,
       "ENG": "fact",
-      "TR": "gerçek"
+      "TR": "gerçek",
+      "ipa": "/fækt/",
+      "pos": "noun",
+      "ex1": "It is a well-known fact that water boils at 100 degrees Celsius.",
+      "ex1_tr": "Suyun 100 santigrat derecede kaynadığı bilinen bir gerçektir.",
+      "ex2": "You must state the facts clearly in your report.",
+      "ex2_tr": "Raporunuzda gerçekleri net bir şekilde belirtmelisiniz."
     },
     {
       "id": 1249,
       "categoryId": 6,
       "ENG": "factor",
-      "TR": "faktör"
+      "TR": "faktör",
+      "ipa": "/ˈfæktə(r)/",
+      "pos": "noun",
+      "ex1": "Price is often the deciding factor when buying a car.",
+      "ex1_tr": "Bir araba satın alırken fiyat genellikle belirleyici faktördür.",
+      "ex2": "Stress can be a major factor in causing health problems.",
+      "ex2_tr": "Stres, sağlık sorunlarına yol açan önemli bir faktör olabilir."
     },
     {
       "id": 1250,
       "categoryId": 6,
       "ENG": "factory",
-      "TR": "fabrika"
+      "TR": "fabrika",
+      "ipa": "/ˈfæktri/",
+      "pos": "noun",
+      "ex1": "His father works in a car factory.",
+      "ex1_tr": "Babası bir araba fabrikasında çalışıyor.",
+      "ex2": "The factory produces thousands of toys every day.",
+      "ex2_tr": "Fabrika her gün binlerce oyuncak üretiyor."
     },
     {
       "id": 1251,
       "categoryId": 6,
       "ENG": "fail",
-      "TR": "başarısız"
+      "TR": "başarısız",
+      "ipa": "/feɪl/",
+      "pos": "verb",
+      "ex1": "If you don't study, you might fail the exam.",
+      "ex1_tr": "Eğer ders çalışmazsan, sınavda başarısız olabilirsin.",
+      "ex2": "The peace talks have failed once again.",
+      "ex2_tr": "Barış görüşmeleri bir kez daha başarısız oldu."
     },
     {
       "id": 1252,
       "categoryId": 6,
       "ENG": "failure",
-      "TR": "başarısızlık"
+      "TR": "başarısızlık",
+      "ipa": "/ˈfeɪljə(r)/",
+      "pos": "noun",
+      "ex1": "Failure is sometimes the first step toward success.",
+      "ex1_tr": "Başarısızlık bazen başarıya giden ilk adımdır.",
+      "ex2": "The launch of the product was a complete failure.",
+      "ex2_tr": "Ürünün piyasaya sürülmesi tam bir başarısızlık oldu."
     },
     {
       "id": 1253,
       "categoryId": 6,
       "ENG": "faint",
-      "TR": "baygın"
+      "TR": "baygın",
+      "ipa": "/feɪnt/",
+      "pos": "adjective",
+      "ex1": "He was found in a faint condition in his room.",
+      "ex1_tr": "Odasında baygın bir halde bulundu.",
+      "ex2": "She felt faint due to the intense heat.",
+      "ex2_tr": "Yoğun ısı nedeniyle kendini baygın hissetti."
     },
     {
       "id": 1254,
       "categoryId": 6,
       "ENG": "faintly",
-      "TR": "hafiften"
+      "TR": "hafiften",
+      "ipa": "/ˈfeɪntli/",
+      "pos": "adverb",
+      "ex1": "The room was only faintly lit by a single candle.",
+      "ex1_tr": "Oda sadece tek bir mumla hafiften aydınlatılmıştı.",
+      "ex2": "She smiled faintly at his joke.",
+      "ex2_tr": "Onun şakasına hafiften gülümsedi."
     },
     {
       "id": 1255,
       "categoryId": 6,
       "ENG": "fair",
-      "TR": "fuar"
+      "TR": "fuar",
+      "ipa": "/feə(r)/",
+      "pos": "noun",
+      "ex1": "We are going to the book fair this weekend.",
+      "ex1_tr": "Bu hafta sonu kitap fuarına gidiyoruz.",
+      "ex2": "The city hosts an annual trade fair.",
+      "ex2_tr": "Şehir her yıl bir ticaret fuarına ev sahipliği yapıyor."
     },
     {
       "id": 1256,
       "categoryId": 6,
       "ENG": "fairly",
-      "TR": "oldukça"
+      "TR": "oldukça",
+      "ipa": "/ˈfeəli/",
+      "pos": "adverb",
+      "ex1": "The test was fairly easy, so most students passed.",
+      "ex1_tr": "Sınav oldukça kolaydı, bu yüzden çoğu öğrenci geçti.",
+      "ex2": "She speaks English fairly well.",
+      "ex2_tr": "İngilizceyi oldukça iyi konuşuyor."
     },
     {
       "id": 1257,
       "categoryId": 6,
       "ENG": "faith",
-      "TR": "inanç"
+      "TR": "inanç",
+      "ipa": "/feɪθ/",
+      "pos": "noun",
+      "ex1": "She has deep religious faith.",
+      "ex1_tr": "Onun derin bir dini inancı var.",
+      "ex2": "You must lose neither hope nor faith in yourself.",
+      "ex2_tr": "Kendine olan ne umudunu ne de inancını yitirmelisin."
     },
     {
       "id": 1258,
       "categoryId": 6,
       "ENG": "faithful",
-      "TR": "sadık"
+      "TR": "sadık",
+      "ipa": "/ˈfeɪθfl/",
+      "pos": "adjective",
+      "ex1": "Dogs are known to be faithful companions to humans.",
+      "ex1_tr": "Köpeklerin insanlara sadık dostlar olduğu bilinir.",
+      "ex2": "He remained faithful to his principles throughout his life.",
+      "ex2_tr": "Hayatı boyunca ilkelerine sadık kaldı."
     },
     {
       "id": 1259,
       "categoryId": 6,
       "ENG": "faithfully",
-      "TR": "dürüstçe"
+      "TR": "dürüstçe",
+      "ipa": "/ˈfeɪθfəli/",
+      "pos": "adverb",
+      "ex1": "He served the local community faithfully for thirty years.",
+      "ex1_tr": "Yerel topluluğa otuz yıl boyunca dürüstçe hizmet etti.",
+      "ex2": "I will faithfully execute the duties of my office.",
+      "ex2_tr": "Görevimin yükümlülüklerini dürüstçe yerine getireceğim."
     },
     {
       "id": 1260,
       "categoryId": 6,
       "ENG": "fall",
-      "TR": "sonbahar"
+      "TR": "sonbahar",
+      "ipa": "/fɔːl/",
+      "pos": "noun",
+      "ex1": "In the fall, the leaves change color and drop from the trees.",
+      "ex1_tr": "Sonbaharda yapraklar renk değiştirir ve ağaçlardan dökülür.",
+      "ex2": "We are planning to visit New York this fall.",
+      "ex2_tr": "Bu sonbahar New York'u ziyaret etmeyi planlıyoruz."
     },
     {
       "id": 1261,
       "categoryId": 6,
       "ENG": "false",
-      "TR": "yanlış"
+      "TR": "yanlış",
+      "ipa": "/fɔːls/",
+      "pos": "adjective",
+      "ex1": "The statement he made turned out to be false.",
+      "ex1_tr": "Yaptığı açıklamanın yanlış olduğu ortaya çıktı.",
+      "ex2": "Is this statement true or false?",
+      "ex2_tr": "Bu ifade doğru mu yoksa yanlış mı?"
     },
     {
       "id": 1262,
       "categoryId": 6,
       "ENG": "fame",
-      "TR": "şöhret"
+      "TR": "şöhret",
+      "ipa": "/feɪm/",
+      "pos": "noun",
+      "ex1": "He achieved international fame at a young age.",
+      "ex1_tr": "Genç yaşta uluslararası bir şöhrete kavuştu.",
+      "ex2": "She did not seek fame or fortune.",
+      "ex2_tr": "Şöhret veya servet peşinde koşmadı."
     },
     {
       "id": 1263,
       "categoryId": 6,
       "ENG": "familiar",
-      "TR": "tanıdık"
+      "TR": "tanıdık",
+      "ipa": "/fəˈmɪliə(r)/",
+      "pos": "adjective",
+      "ex1": "Her voice sounds very familiar to me.",
+      "ex1_tr": "Sesi bana çok tanıdık geliyor.",
+      "ex2": "I was happy to see a familiar face in the crowd.",
+      "ex2_tr": "Kalabalığın içinde tanıdık bir yüz gördüğüm için mutlu oldum."
     },
     {
       "id": 1264,
       "categoryId": 6,
       "ENG": "family",
-      "TR": "aile"
+      "TR": "aile",
+      "ipa": "/ˈfæmɪli/",
+      "pos": "noun",
+      "ex1": "I spent the weekend with my family.",
+      "ex1_tr": "Hafta sonunu ailemle geçirdim.",
+      "ex2": "They want to start a family soon.",
+      "ex2_tr": "Yakında bir aile kurmak istiyorlar."
     },
     {
       "id": 1265,
       "categoryId": 6,
       "ENG": "famous",
-      "TR": "tanınmış"
+      "TR": "tanınmış",
+      "ipa": "/ˈfeɪməs/",
+      "pos": "adjective",
+      "ex1": "The city is famous for its historical architecture.",
+      "ex1_tr": "Şehir, tarihi mimarisiyle tanınmıştır.",
+      "ex2": "She wants to be a famous singer one day.",
+      "ex2_tr": "Bir gün tanınmış bir şarkıcı olmak istiyor."
     },
     {
       "id": 1266,
       "categoryId": 6,
       "ENG": "fan",
-      "TR": "yelpaze"
+      "TR": "yelpaze",
+      "ipa": "/fæn/",
+      "pos": "noun",
+      "ex1": "I bought a small fan to keep cool in the summer.",
+      "ex1_tr": "Yazın serinlemek için küçük bir yelpaze aldım.",
+      "ex2": "She is a big fan of the local football team.",
+      "ex2_tr": "O, yerel futbol takımının büyük bir hayranı."
     },
     {
       "id": 1267,
       "categoryId": 6,
       "ENG": "fancy",
-      "TR": "fantezi"
+      "TR": "fantezi",
+      "ipa": "/ˈfænsi/",
+      "pos": "adjective",
+      "ex1": "They live in a very fancy house in the city center.",
+      "ex1_tr": "Şehir merkezinde çok süslü bir evde yaşıyorlar.",
+      "ex2": "Do you fancy going out for dinner tonight?",
+      "ex2_tr": "Bu akşam yemeğe çıkmak ister misin?"
     },
     {
       "id": 1268,
       "categoryId": 6,
       "ENG": "far",
-      "TR": "Irak"
+      "TR": "Irak",
+      "ipa": "/fɑːr/",
+      "pos": "adverb",
+      "ex1": "How far is it to the nearest town?",
+      "ex1_tr": "En yakın kasabaya ne kadar uzaklıkta?",
+      "ex2": "The village is far from any major city.",
+      "ex2_tr": "Köy, herhangi bir büyük şehirden uzakta."
     },
     {
       "id": 1269,
       "categoryId": 6,
       "ENG": "farm",
-      "TR": "Çiftlik"
+      "TR": "Çiftlik",
+      "ipa": "/fɑːrm/",
+      "pos": "noun",
+      "ex1": "My grandparents own a small farm in the countryside.",
+      "ex1_tr": "Büyükannem ve büyükbabam kırsalda küçük bir çiftliğe sahipler.",
+      "ex2": "We used to farm potatoes on this land.",
+      "ex2_tr": "Bu toprakta patates yetiştirirdik."
     },
     {
       "id": 1270,
       "categoryId": 6,
       "ENG": "farmer",
-      "TR": "çiftçi"
+      "TR": "çiftçi",
+      "ipa": "/ˈfɑːrmər/",
+      "pos": "noun",
+      "ex1": "The farmer woke up early to milk the cows.",
+      "ex1_tr": "Çiftçi inekleri sağmak için erken kalktı.",
+      "ex2": "Being a farmer requires a lot of hard work and dedication.",
+      "ex2_tr": "Çiftçi olmak çok fazla sıkı çalışma ve özveri gerektirir."
     },
     {
       "id": 1271,
       "categoryId": 6,
       "ENG": "farming",
-      "TR": "tarım"
+      "TR": "tarım",
+      "ipa": "/ˈfɑːrmɪŋ/",
+      "pos": "noun",
+      "ex1": "Organic farming is becoming more popular.",
+      "ex1_tr": "Organik tarım giderek daha popüler hale geliyor.",
+      "ex2": "Many people in the region make their living from farming.",
+      "ex2_tr": "Bölgedeki birçok insan geçimini tarımdan sağlıyor."
     },
     {
       "id": 1272,
       "categoryId": 6,
       "ENG": "farther",
-      "TR": "daha uzağa"
+      "TR": "daha uzağa",
+      "ipa": "/ˈfɑːrðər/",
+      "pos": "adverb",
+      "ex1": "Can you walk a little farther?",
+      "ex1_tr": "Biraz daha uzağa yürüyebilir misin?",
+      "ex2": "We drove farther into the desert.",
+      "ex2_tr": "Çölün daha derinlerine doğru sürdük."
     },
     {
       "id": 1273,
       "categoryId": 6,
       "ENG": "farthest",
-      "TR": "en uzak"
+      "TR": "en uzak",
+      "ipa": "/ˈfɑːrðɪst/",
+      "pos": "adverb",
+      "ex1": "That's the farthest I've ever run.",
+      "ex1_tr": "Koştuğum en uzak mesafe bu.",
+      "ex2": "The farthest planet from the sun is Neptune.",
+      "ex2_tr": "Güneş'e en uzak gezegen Neptün'dür."
     },
     {
       "id": 1274,
       "categoryId": 6,
       "ENG": "fashion",
-      "TR": "moda"
+      "TR": "moda",
+      "ipa": "/ˈfæʃən/",
+      "pos": "noun",
+      "ex1": "Blue jeans have never gone out of fashion.",
+      "ex1_tr": "Mavi kotlar asla modası geçmedi.",
+      "ex2": "She always dresses in the latest fashion.",
+      "ex2_tr": "O her zaman son modaya göre giyinir."
     },
     {
       "id": 1275,
       "categoryId": 6,
       "ENG": "fashionable",
-      "TR": "moda"
+      "TR": "moda",
+      "ipa": "/ˈfæʃənəbl/",
+      "pos": "adjective",
+      "ex1": "That store sells very fashionable clothes.",
+      "ex1_tr": "O mağaza çok moda kıyafetler satıyor.",
+      "ex2": "It's fashionable to wear vintage clothing these days.",
+      "ex2_tr": "Bu günlerde eski kıyafetler giymek moda."
     },
     {
       "id": 1276,
       "categoryId": 6,
       "ENG": "fast",
-      "TR": "hızlı"
+      "TR": "hızlı",
+      "ipa": "/fæst/",
+      "pos": "adjective",
+      "ex1": "A cheetah is a very fast animal.",
+      "ex1_tr": "Çita çok hızlı bir hayvandır.",
+      "ex2": "Please drive fast, we're late!",
+      "ex2_tr": "Lütfen hızlı sür, geç kaldık!"
     },
     {
       "id": 1277,
       "categoryId": 6,
       "ENG": "fasten",
-      "TR": "bağlamak"
+      "TR": "bağlamak",
+      "ipa": "/ˈfæsən/",
+      "pos": "verb",
+      "ex1": "Please fasten your seatbelt before we start the car.",
+      "ex1_tr": "Arabayı çalıştırmadan önce emniyet kemerinizi bağlayınız.",
+      "ex2": "Fasten the rope securely to the post.",
+      "ex2_tr": "İpi direğe sağlamca bağla."
     },
     {
       "id": 1278,
       "categoryId": 6,
       "ENG": "fat",
-      "TR": "şişman"
+      "TR": "şişman",
+      "ipa": "/fæt/",
+      "pos": "adjective",
+      "ex1": "He was a fat baby, but he grew into a tall, slim man.",
+      "ex1_tr": "Şişman bir bebekti ama uzun, ince bir adama dönüştü.",
+      "ex2": "This meat has too much fat on it.",
+      "ex2_tr": "Bu ette çok fazla yağ var."
     },
     {
       "id": 1279,
       "categoryId": 6,
       "ENG": "father",
-      "TR": "baba"
+      "TR": "baba",
+      "ipa": "/ˈfɑːðər/",
+      "pos": "noun",
+      "ex1": "My father taught me how to ride a bicycle.",
+      "ex1_tr": "Babam bana bisiklete binmeyi öğretti.",
+      "ex2": "He's a loving father to his three children.",
+      "ex2_tr": "O, üç çocuğuna karşı sevgi dolu bir baba."
     },
     {
       "id": 1280,
       "categoryId": 6,
       "ENG": "faucet",
-      "TR": "musluk"
+      "TR": "musluk",
+      "ipa": "/ˈfɔːsɪt/",
+      "pos": "noun",
+      "ex1": "The faucet in the kitchen is dripping.",
+      "ex1_tr": "Mutfaktaki musluk damlıyor.",
+      "ex2": "Turn off the faucet to save water.",
+      "ex2_tr": "Su tasarrufu yapmak için musluğu kapat."
     },
     {
       "id": 1281,
       "categoryId": 6,
       "ENG": "fault",
-      "TR": "hata"
+      "TR": "hata",
+      "ipa": "/fɔːlt/",
+      "pos": "noun",
+      "ex1": "It was my fault that we missed the train.",
+      "ex1_tr": "Treni kaçırmamız benim hatamdı.",
+      "ex2": "The accident was caused by a fault in the car's braking system.",
+      "ex2_tr": "Kaza, arabanın fren sistemindeki bir arızadan kaynaklandı."
     },
     {
       "id": 1282,
       "categoryId": 6,
       "ENG": "favour",
-      "TR": "iyilik"
+      "TR": "iyilik",
+      "ipa": "/ˈfeɪvər/",
+      "pos": "noun",
+      "ex1": "Could you do me a favour and help me with this box?",
+      "ex1_tr": "Bana bir iyilik yapıp bu kutuyla yardım eder misin?",
+      "ex2": "I am in favour of the new proposal.",
+      "ex2_tr": "Yeni teklifi destekliyorum."
     },
     {
       "id": 1283,
       "categoryId": 6,
       "ENG": "favourite",
-      "TR": "favori"
+      "TR": "favori",
+      "ipa": "/ˈfeɪvərɪt/",
+      "pos": "adjective",
+      "ex1": "What's your favourite color?",
+      "ex1_tr": "En sevdiğin renk ne?",
+      "ex2": "This book is one of my favourites.",
+      "ex2_tr": "Bu kitap en sevdiklerimden biri."
     },
     {
       "id": 1284,
       "categoryId": 6,
       "ENG": "fear",
-      "TR": "korku"
+      "TR": "korku",
+      "ipa": "/fɪər/",
+      "pos": "noun",
+      "ex1": "He has a great fear of heights.",
+      "ex1_tr": "Onun yükseklik korkusu var.",
+      "ex2": "I fear that we might be late.",
+      "ex2_tr": "Geç kalabileceğimizden korkuyorum."
     },
     {
       "id": 1285,
       "categoryId": 6,
       "ENG": "feather",
-      "TR": "tüy"
+      "TR": "tüy",
+      "ipa": "/ˈfeðər/",
+      "pos": "noun",
+      "ex1": "The bird had a beautiful blue feather.",
+      "ex1_tr": "Kuşun güzel bir mavi tüyü vardı.",
+      "ex2": "Feathers help birds to fly and keep warm.",
+      "ex2_tr": "Tüyler kuşların uçmasına ve sıcak kalmasına yardımcı olur."
     },
     {
       "id": 1286,
       "categoryId": 6,
       "ENG": "feature",
-      "TR": "özellik"
+      "TR": "özellik",
+      "ipa": "/ˈfiːtʃər/",
+      "pos": "noun",
+      "ex1": "The new phone has many exciting features.",
+      "ex1_tr": "Yeni telefon birçok heyecan verici özelliğe sahip.",
+      "ex2": "The movie features a famous actress.",
+      "ex2_tr": "Filmde ünlü bir aktris rol alıyor."
     },
     {
       "id": 1287,
       "categoryId": 6,
       "ENG": "February",
-      "TR": "Şubat"
+      "TR": "Şubat",
+      "ipa": "/ˈfɛbruəri/",
+      "pos": "noun",
+      "ex1": "February is the shortest month of the year.",
+      "ex1_tr": "Şubat yılın en kısa ayıdır.",
+      "ex2": "My birthday is in February.",
+      "ex2_tr": "Doğum günüm Şubat ayında."
     },
     {
       "id": 1288,
       "categoryId": 6,
       "ENG": "federal",
-      "TR": "federal"
+      "TR": "federal",
+      "ipa": "/ˈfɛdərəl/",
+      "pos": "adjective",
+      "ex1": "The federal government is responsible for national defense.",
+      "ex1_tr": "Federal hükümet ulusal savunmadan sorumludur.",
+      "ex2": "There was a federal investigation into the matter.",
+      "ex2_tr": "Konuyla ilgili federal bir soruşturma vardı."
     },
     {
       "id": 1289,
       "categoryId": 6,
       "ENG": "fee",
-      "TR": "ücret"
+      "TR": "ücret",
+      "ipa": "/fiː/",
+      "pos": "noun",
+      "ex1": "You have to pay an entrance fee to get into the museum.",
+      "ex1_tr": "Müzeye girmek için bir giriş ücreti ödemeniz gerekiyor.",
+      "ex2": "The tuition fee for this course is quite high.",
+      "ex2_tr": "Bu kursun öğrenim ücreti oldukça yüksek."
     },
     {
       "id": 1290,
       "categoryId": 6,
       "ENG": "feed",
-      "TR": "besleme"
+      "TR": "besleme",
+      "ipa": "/fiːd/",
+      "pos": "verb",
+      "ex1": "Please feed the cat before you leave.",
+      "ex1_tr": "Ayrılmadan önce lütfen kediyi besle.",
+      "ex2": "Farmers feed their livestock with hay and grain.",
+      "ex2_tr": "Çiftçiler hayvanlarını saman ve tahıl ile besler."
     },
     {
       "id": 1291,
       "categoryId": 6,
       "ENG": "feel",
-      "TR": "hissetmek"
+      "TR": "hissetmek",
+      "ipa": "/fiːl/",
+      "pos": "verb",
+      "ex1": "I feel much better today.",
+      "ex1_tr": "Bugün kendimi çok daha iyi hissediyorum.",
+      "ex2": "Can you feel the vibration of the train?",
+      "ex2_tr": "Trenin titreşimini hissedebiliyor musun?"
     },
     {
       "id": 1292,
       "categoryId": 6,
       "ENG": "feeling",
-      "TR": "duygu"
+      "TR": "duygu",
+      "ipa": "/ˈfiːlɪŋ/",
+      "pos": "noun",
+      "ex1": "She had a strange feeling that something was wrong.",
+      "ex1_tr": "Bir şeylerin yanlış olduğuna dair garip bir hissi vardı.",
+      "ex2": "My feelings were hurt by his rude comments.",
+      "ex2_tr": "Kaba yorumları yüzünden duygularım incindi."
     },
     {
       "id": 1293,
       "categoryId": 6,
       "ENG": "fellow",
-      "TR": "dost"
+      "TR": "dost",
+      "ipa": "/ˈfɛloʊ/",
+      "pos": "noun",
+      "ex1": "He's a good fellow and always willing to help.",
+      "ex1_tr": "O iyi bir adam ve her zaman yardım etmeye istekli.",
+      "ex2": "We are fellow students from the same university.",
+      "ex2_tr": "Biz aynı üniversiteden öğrenci arkadaşız."
     },
     {
       "id": 1294,
       "categoryId": 6,
       "ENG": "female",
-      "TR": "kadın"
+      "TR": "kadın",
+      "ipa": "/ˈfiːmeɪl/",
+      "pos": "adjective",
+      "ex1": "The majority of the workforce is female.",
+      "ex1_tr": "İşgücünün çoğu kadınlardan oluşuyor.",
+      "ex2": "There are more female doctors in the hospital now.",
+      "ex2_tr": "Hastanede artık daha fazla kadın doktor var."
     },
     {
       "id": 1295,
       "categoryId": 6,
       "ENG": "fence",
-      "TR": "çit"
+      "TR": "çit",
+      "ipa": "/fɛns/",
+      "pos": "noun",
+      "ex1": "They built a wooden fence around the garden.",
+      "ex1_tr": "Bahçenin etrafına ahşap bir çit inşa ettiler.",
+      "ex2": "We need to fence off this area to protect the plants.",
+      "ex2_tr": "Bitkileri korumak için bu alanı çitle çevirmemiz gerekiyor."
     },
     {
       "id": 1296,
       "categoryId": 6,
       "ENG": "festival",
-      "TR": "Festival"
+      "TR": "Festival",
+      "ipa": "/ˈfɛstɪvl/",
+      "pos": "noun",
+      "ex1": "The town holds an annual music festival.",
+      "ex1_tr": "Kasaba yıllık bir müzik festivali düzenliyor.",
+      "ex2": "We celebrated the end of Ramadan with a big festival.",
+      "ex2_tr": "Ramazan'ın bitişini büyük bir festivalle kutladık."
     },
     {
       "id": 1297,
       "categoryId": 6,
       "ENG": "fetch",
-      "TR": "getirmek"
+      "TR": "getirmek",
+      "ipa": "/fɛtʃ/",
+      "pos": "verb",
+      "ex1": "Can you fetch me a glass of water, please?",
+      "ex1_tr": "Bana bir bardak su getirebilir misin lütfen?",
+      "ex2": "The dog loves to fetch the ball.",
+      "ex2_tr": "Köpek topu getirmeyi çok sever."
     },
     {
       "id": 1298,
       "categoryId": 6,
       "ENG": "fever",
-      "TR": "ateş"
+      "TR": "ateş",
+      "ipa": "/ˈfiːvər/",
+      "pos": "noun",
+      "ex1": "The child had a high fever.",
+      "ex1_tr": "Çocuğun yüksek ateşi vardı.",
+      "ex2": "He's got a fever and a cough.",
+      "ex2_tr": "Ateşi ve öksürüğü var."
     },
     {
       "id": 1299,
       "categoryId": 6,
       "ENG": "few",
-      "TR": "az"
+      "TR": "az",
+      "ipa": "/fjuː/",
+      "pos": "determiner",
+      "ex1": "I have a few friends coming over tonight.",
+      "ex1_tr": "Bu gece birkaç arkadaşım gelecek.",
+      "ex2": "Few people understand the true complexity of the issue.",
+      "ex2_tr": "Çok az insan meselenin gerçek karmaşıklığını anlıyor."
     },
     {
       "id": 1300,
       "categoryId": 6,
       "ENG": "field",
-      "TR": "alan"
+      "TR": "alan",
+      "ipa": "/fiːld/",
+      "pos": "noun",
+      "ex1": "The cows were grazing in the field.",
+      "ex1_tr": "İnekler tarlada otluyordu.",
+      "ex2": "She works in the field of artificial intelligence.",
+      "ex2_tr": "Yapay zeka alanında çalışıyor."
     },
     {
       "id": 1301,
       "categoryId": 6,
       "ENG": "fifteen",
-      "TR": "onbeş"
+      "TR": "onbeş",
+      "ipa": "/ˌfɪfˈtiːn/",
+      "pos": "number",
+      "ex1": "There are fifteen students in the class.",
+      "ex1_tr": "Sınıfta on beş öğrenci var.",
+      "ex2": "My sister will be fifteen next month.",
+      "ex2_tr": "Kız kardeşim gelecek ay on beş yaşında olacak."
     },
     {
       "id": 1302,
       "categoryId": 6,
       "ENG": "fifteenth",
-      "TR": "onbeşinci"
+      "TR": "onbeşinci",
+      "ipa": "/ˌfɪfˈtiːnθ/",
+      "pos": "ordinal number",
+      "ex1": "Today is the fifteenth of March.",
+      "ex1_tr": "Bugün on beş Mart.",
+      "ex2": "She finished fifteenth in the race.",
+      "ex2_tr": "Yarışı on beşinci bitirdi."
     },
     {
       "id": 1303,
       "categoryId": 6,
       "ENG": "fifth",
-      "TR": "beşinci"
+      "TR": "beşinci",
+      "ipa": "/fɪfθ/",
+      "pos": "ordinal number",
+      "ex1": "He came in fifth place.",
+      "ex1_tr": "Beşinci sırada geldi.",
+      "ex2": "This is the fifth time I've called him.",
+      "ex2_tr": "Onu aradığım beşinci kez bu."
     },
     {
       "id": 1304,
       "categoryId": 6,
       "ENG": "fiftieth",
-      "TR": "ellinci"
+      "TR": "ellinci",
+      "ipa": "/ˈfɪftiəθ/",
+      "pos": "ordinal number",
+      "ex1": "We celebrated our fiftieth wedding anniversary.",
+      "ex1_tr": "Ellinci evlilik yıldönümümüzü kutladık.",
+      "ex2": "She's turning fiftieth next year.",
+      "ex2_tr": "Gelecek yıl elli yaşına girecek."
     },
     {
       "id": 1305,
       "categoryId": 6,
       "ENG": "fifty",
-      "TR": "elli"
+      "TR": "elli",
+      "ipa": "/ˈfɪfti/",
+      "pos": "number",
+      "ex1": "There are fifty states in the USA.",
+      "ex1_tr": "ABD'de elli eyalet var.",
+      "ex2": "She paid fifty dollars for the concert ticket.",
+      "ex2_tr": "Konser bileti için elli dolar ödedi."
     },
     {
       "id": 1306,
       "categoryId": 6,
       "ENG": "fight",
-      "TR": "kavga"
+      "TR": "kavga",
+      "ipa": "/faɪt/",
+      "pos": "verb",
+      "ex1": "Don't fight with your siblings.",
+      "ex1_tr": "Kardeşlerinle kavga etme.",
+      "ex2": "The two men started to fight in the street.",
+      "ex2_tr": "İki adam sokakta kavga etmeye başladı."
     },
     {
       "id": 1307,
       "categoryId": 6,
       "ENG": "fighting",
-      "TR": "savaş"
+      "TR": "savaş",
+      "ipa": "/ˈfaɪtɪŋ/",
+      "pos": "noun",
+      "ex1": "The fighting continued for days.",
+      "ex1_tr": "Çatışma günlerce devam etti.",
+      "ex2": "There was a lot of fighting over the last slice of pizza.",
+      "ex2_tr": "Son dilim pizza yüzünden çok kavga oldu."
     },
     {
       "id": 1308,
       "categoryId": 6,
       "ENG": "figure",
-      "TR": "şekil"
+      "TR": "şekil",
+      "ipa": "/ˈfɪɡər/",
+      "pos": "noun",
+      "ex1": "She has a very slim figure.",
+      "ex1_tr": "Çok ince bir fiziği var.",
+      "ex2": "Can you see the figure in the distance?",
+      "ex2_tr": "Uzaktaki figürü görebiliyor musun?"
     },
     {
       "id": 1309,
       "categoryId": 6,
       "ENG": "figure out",
-      "TR": "çözmek"
+      "TR": "çözmek",
+      "ipa": "/ˈfɪɡər aʊt/",
+      "pos": "phrasal verb",
+      "ex1": "I can't figure out why she's so upset.",
+      "ex1_tr": "Neden bu kadar üzgün olduğunu anlayamıyorum.",
+      "ex2": "We need to figure out a way to solve this problem.",
+      "ex2_tr": "Bu sorunu çözmenin bir yolunu bulmamız gerekiyor."
     },
     {
       "id": 1310,
       "categoryId": 6,
       "ENG": "file",
-      "TR": "dosya"
+      "TR": "dosya",
+      "ipa": "/faɪl/",
+      "pos": "noun",
+      "ex1": "Please save the document as a PDF file.",
+      "ex1_tr": "Lütfen belgeyi PDF dosyası olarak kaydedin.",
+      "ex2": "I need to organize these files in alphabetical order.",
+      "ex2_tr": "Bu dosyaları alfabetik sıraya göre düzenlemem gerekiyor."
     },
     {
       "id": 1311,
       "categoryId": 6,
       "ENG": "fill",
-      "TR": "dolgu"
+      "TR": "dolgu",
+      "ipa": "/fɪl/",
+      "pos": "verb",
+      "ex1": "Can you fill this bottle with water?",
+      "ex1_tr": "Bu şişeyi suyla doldurabilir misin?",
+      "ex2": "The room began to fill with smoke.",
+      "ex2_tr": "Oda dumanla dolmaya başladı."
     },
     {
       "id": 1312,
       "categoryId": 6,
       "ENG": "fill in",
-      "TR": "doldurun"
+      "TR": "doldurun",
+      "ipa": "/fɪl ɪn/",
+      "pos": "phrasal verb",
+      "ex1": "Please fill in the missing information on the form.",
+      "ex1_tr": "Lütfen formdaki eksik bilgileri doldurun.",
+      "ex2": "I'll fill you in on what happened later.",
+      "ex2_tr": "Daha sonra ne olduğunu sana anlatırım."
     },
     {
       "id": 1313,
       "categoryId": 6,
       "ENG": "fill out",
-      "TR": "doldur"
+      "TR": "doldur",
+      "ipa": "/fɪl aʊt/",
+      "pos": "phrasal verb",
+      "ex1": "You need to fill out this application form completely.",
+      "ex1_tr": "Bu başvuru formunu tamamen doldurmanız gerekiyor.",
+      "ex2": "He's been working out and has started to fill out a bit.",
+      "ex2_tr": "Spor yapıyor ve biraz kilo almaya başladı."
     },
     {
       "id": 1314,
       "categoryId": 6,
       "ENG": "fill up",
-      "TR": "doldur"
+      "TR": "doldur",
+      "ipa": "/fɪl ʌp/",
+      "pos": "phrasal verb",
+      "ex1": "I need to fill up the car with petrol.",
+      "ex1_tr": "Arabaya benzin doldurmam gerekiyor.",
+      "ex2": "Fill up your glass if you want more juice.",
+      "ex2_tr": "Daha fazla meyve suyu istiyorsan bardağını doldur."
     },
     {
       "id": 1315,
       "categoryId": 6,
       "ENG": "film",
-      "TR": "film"
+      "TR": "film",
+      "ipa": "/fɪlm/",
+      "pos": "noun",
+      "ex1": "What's your favorite film of all time?",
+      "ex1_tr": "Tüm zamanların en sevdiğin filmi hangisi?",
+      "ex2": "We watched a classic black and white film last night.",
+      "ex2_tr": "Dün gece klasik bir siyah beyaz film izledik."
     },
     {
       "id": 1316,
       "categoryId": 6,
       "ENG": "final",
-      "TR": "nihai"
+      "TR": "nihai",
+      "ipa": "/ˈfaɪnl/",
+      "pos": "adjective",
+      "ex1": "This is your final warning.",
+      "ex1_tr": "Bu senin son uyarın.",
+      "ex2": "The team reached the final of the competition.",
+      "ex2_tr": "Takım yarışmanın finaline ulaştı."
     },
     {
       "id": 1317,
       "categoryId": 6,
       "ENG": "finally",
-      "TR": "en sonunda"
+      "TR": "en sonunda",
+      "ipa": "/ˈfaɪnəli/",
+      "pos": "adverb",
+      "ex1": "After a long wait, the bus finally arrived.",
+      "ex1_tr": "Uzun bir bekleyişin ardından otobüs nihayet geldi.",
+      "ex2": "He finally achieved his goal of running a marathon.",
+      "ex2_tr": "Nihayet bir maraton koşma hedefine ulaştı."
     },
     {
       "id": 1318,
       "categoryId": 6,
       "ENG": "finance",
-      "TR": "maliye"
+      "TR": "maliye",
+      "ipa": "/ˈfaɪnæns/",
+      "pos": "noun",
+      "ex1": "The company needs to secure more finance for its expansion.",
+      "ex1_tr": "Şirket, genişlemesi için daha fazla finansman sağlamalıdır.",
+      "ex2": "He's studying corporate finance at university.",
+      "ex2_tr": "Üniversitede kurumsal finans okuyor."
     },
     {
       "id": 1319,
       "categoryId": 6,
       "ENG": "financial",
-      "TR": "parasal"
+      "TR": "parasal",
+      "ipa": "/faɪˈnænʃl/",
+      "pos": "adjective",
+      "ex1": "She's facing some financial difficulties.",
+      "ex1_tr": "Bazı mali zorluklarla karşı karşıya.",
+      "ex2": "He received financial aid to help with his studies.",
+      "ex2_tr": "Çalışmalarına yardımcı olmak için maddi yardım aldı."
     },
     {
       "id": 1320,
       "categoryId": 6,
       "ENG": "find",
-      "TR": "bulmak"
+      "TR": "bulmak",
+      "ipa": "/faɪnd/",
+      "pos": "verb",
+      "ex1": "Did you find your lost keys?",
+      "ex1_tr": "Kayıp anahtarlarını buldun mu?",
+      "ex2": "We need to find a solution to this problem quickly.",
+      "ex2_tr": "Bu soruna hızlıca bir çözüm bulmalıyız."
     },
     {
       "id": 1321,
       "categoryId": 6,
       "ENG": "find out",
-      "TR": "Bulmak"
+      "TR": "Bulmak",
+      "ipa": "/faɪnd aʊt/",
+      "pos": "phrasal verb",
+      "ex1": "I want to find out more about the history of this place.",
+      "ex1_tr": "Bu yerin tarihi hakkında daha fazla bilgi edinmek istiyorum.",
+      "ex2": "We need to find out who is responsible for the damage.",
+      "ex2_tr": "Zarardan kimin sorumlu olduğunu bulmamız gerekiyor."
     },
     {
       "id": 1322,
       "categoryId": 6,
       "ENG": "fine",
-      "TR": "ince"
+      "TR": "ince",
+      "ipa": "/faɪn/",
+      "pos": "adjective",
+      "ex1": "The weather is fine today.",
+      "ex1_tr": "Hava bugün güzel.",
+      "ex2": "The sand on the beach was very fine.",
+      "ex2_tr": "Plajdaki kum çok inceydi."
     },
     {
       "id": 1323,
       "categoryId": 6,
       "ENG": "finely",
-      "TR": "incecik"
+      "TR": "incecik",
+      "ipa": "/ˈfaɪnli/",
+      "pos": "adverb",
+      "ex1": "Chop the onions very finely for the sauce.",
+      "ex1_tr": "Soğanları sos için çok ince doğrayın.",
+      "ex2": "The artist finely detailed every brushstroke.",
+      "ex2_tr": "Sanatçı her fırça darbesini ince ayrıntılarla işledi."
     },
     {
       "id": 1324,
       "categoryId": 6,
       "ENG": "finger",
-      "TR": "parmak"
+      "TR": "parmak",
+      "ipa": "/ˈfɪŋɡər/",
+      "pos": "noun",
+      "ex1": "She pointed with her index finger.",
+      "ex1_tr": "İşaret parmağıyla işaret etti.",
+      "ex2": "He cut his finger while chopping vegetables.",
+      "ex2_tr": "Sebze doğrarken parmağını kesti."
     },
     {
       "id": 1325,
       "categoryId": 6,
       "ENG": "finish",
-      "TR": "bitiş"
+      "TR": "bitiş",
+      "ipa": "/ˈfɪnɪʃ/",
+      "pos": "verb",
+      "ex1": "I need to finish my homework before dinner.",
+      "ex1_tr": "Akşam yemeğinden önce ödevimi bitirmem gerekiyor.",
+      "ex2": "The marathon runners sprinted towards the finish line.",
+      "ex2_tr": "Maraton koşucuları bitiş çizgisine doğru depar attılar."
     },
     {
       "id": 1326,
       "categoryId": 6,
       "ENG": "finished",
-      "TR": "bitmiş"
+      "TR": "bitmiş",
+      "ipa": "/ˈfɪnɪʃt/",
+      "pos": "adjective",
+      "ex1": "Are you finished with your meal?",
+      "ex1_tr": "Yemeğinizi bitirdiniz mi?",
+      "ex2": "The project is finally finished!",
+      "ex2_tr": "Proje sonunda bitti!"
     },
     {
       "id": 1327,
       "categoryId": 6,
       "ENG": "finish off",
-      "TR": "bitirmek"
+      "TR": "bitirmek",
+      "ipa": "/ˈfɪnɪʃ ɒf/",
+      "pos": "phrasal verb",
+      "ex1": "Let's finish off the rest of the pizza.",
+      "ex1_tr": "Hadi pizzanın kalanını bitirelim.",
+      "ex2": "He decided to finish off his opponent with a strong punch.",
+      "ex2_tr": "Güçlü bir yumrukla rakibini bitirmeye karar verdi."
     },
     {
       "id": 1328,
       "categoryId": 6,
       "ENG": "fire",
-      "TR": "ateş"
+      "TR": "ateş",
+      "ipa": "/ˈfaɪər/",
+      "pos": "noun",
+      "ex1": "The house caught fire during the night.",
+      "ex1_tr": "Ev gece boyunca alev aldı.",
+      "ex2": "Please don't play with fire.",
+      "ex2_tr": "Lütfen ateşle oynama."
     },
     {
       "id": 1329,
       "categoryId": 6,
       "ENG": "firm",
-      "TR": "firma"
+      "TR": "firma",
+      "ipa": "/fɜːrm/",
+      "pos": "adjective",
+      "ex1": "The mattress is quite firm.",
+      "ex1_tr": "Yatak oldukça sert.",
+      "ex2": "She works for a law firm in the city.",
+      "ex2_tr": "Şehirde bir hukuk firmasında çalışıyor."
     },
     {
       "id": 1330,
       "categoryId": 6,
       "ENG": "firmly",
-      "TR": "sıkıca"
+      "TR": "sıkıca",
+      "ipa": "/ˈfɜːrmli/",
+      "pos": "adverb",
+      "ex1": "Hold on firmly to the rope.",
+      "ex1_tr": "İpe sıkıca tutun.",
+      "ex2": "He believes firmly in the importance of education.",
+      "ex2_tr": "Eğitimin önemine sıkıca inanıyor."
     },
     {
       "id": 1331,
       "categoryId": 6,
       "ENG": "first",
-      "TR": "ilk"
+      "TR": "ilk",
+      "ipa": "/fɜːrst/",
+      "pos": "adjective",
+      "ex1": "This is my first time visiting London.",
+      "ex1_tr": "Londra'yı ilk kez ziyaret ediyorum.",
+      "ex2": "Who finished first in the race?",
+      "ex2_tr": "Yarışı ilk kim bitirdi?"
     },
     {
       "id": 1332,
       "categoryId": 6,
       "ENG": "fish",
-      "TR": "balık"
+      "TR": "balık",
+      "ipa": "/fɪʃ/",
+      "pos": "noun",
+      "ex1": "We had fish and chips for dinner.",
+      "ex1_tr": "Akşam yemeğinde balık ve patates kızartması yedik.",
+      "ex2": "He loves to fish in the lake on weekends.",
+      "ex2_tr": "Hafta sonları gölde balık tutmayı sever."
     },
     {
       "id": 1333,
       "categoryId": 6,
       "ENG": "fishing",
-      "TR": "Balık tutma"
+      "TR": "Balık tutma",
+      "ipa": "/ˈfɪʃɪŋ/",
+      "pos": "noun",
+      "ex1": "My dad enjoys fishing on the weekends.",
+      "ex1_tr": "Babam hafta sonları balık tutmaktan hoşlanır.",
+      "ex2": "We went fishing in the river this morning.",
+      "ex2_tr": "Bu sabah nehirde balık tuttuk."
     },
     {
       "id": 1334,
       "categoryId": 6,
       "ENG": "fit",
-      "TR": "Uygun"
+      "TR": "Uygun",
+      "ipa": "/fɪt/",
+      "pos": "verb",
+      "ex1": "Does this shirt fit you well?",
+      "ex1_tr": "Bu gömlek sana iyi uyuyor mu?",
+      "ex2": "She tries to stay fit by exercising regularly.",
+      "ex2_tr": "Düzenli egzersiz yaparak formda kalmaya çalışır."
     },
     {
       "id": 1335,
       "categoryId": 6,
       "ENG": "fit in",
-      "TR": "Uyum sağlamak"
+      "TR": "Uyum sağlamak",
+      "ipa": "/fɪt ɪn/",
+      "pos": "phrasal verb",
+      "ex1": "He found it hard to fit in with the new group.",
+      "ex1_tr": "Yeni gruba uyum sağlamakta zorlandı.",
+      "ex2": "The new furniture doesn't quite fit in with the existing decor.",
+      "ex2_tr": "Yeni mobilyalar mevcut dekorla tam olarak uyuşmuyor."
     },
     {
       "id": 1336,
       "categoryId": 6,
       "ENG": "five",
-      "TR": "beş"
+      "TR": "beş",
+      "ipa": "/faɪv/",
+      "pos": "number",
+      "ex1": "There are five apples in the basket.",
+      "ex1_tr": "Sepette beş elma var.",
+      "ex2": "We need to be there by five o'clock.",
+      "ex2_tr": "Saat beşe kadar orada olmamız gerekiyor."
     },
     {
       "id": 1337,
       "categoryId": 6,
       "ENG": "fix",
-      "TR": "düzeltme"
+      "TR": "düzeltme",
+      "ipa": "/fɪks/",
+      "pos": "verb",
+      "ex1": "Can you help me fix my broken bike?",
+      "ex1_tr": "Kırık bisikletimi tamir etmeme yardım edebilir misin?",
+      "ex2": "They tried to fix the problem, but it was too late.",
+      "ex2_tr": "Sorunu çözmeye çalıştılar ama çok geçti."
     },
     {
       "id": 1338,
       "categoryId": 6,
       "ENG": "fixed",
-      "TR": "sabit"
+      "TR": "sabit",
+      "ipa": "/fɪkst/",
+      "pos": "adjective",
+      "ex1": "The price of the product is fixed.",
+      "ex1_tr": "Ürünün fiyatı sabittir.",
+      "ex2": "The chair was firmly fixed to the floor.",
+      "ex2_tr": "Sandalye yere sıkıca sabitlenmişti."
     },
     {
       "id": 1339,
       "categoryId": 6,
       "ENG": "flag",
-      "TR": "bayrak"
+      "TR": "bayrak",
+      "ipa": "/flæɡ/",
+      "pos": "noun",
+      "ex1": "The flag was waving in the wind.",
+      "ex1_tr": "Bayrak rüzgarda dalgalanıyordu.",
+      "ex2": "They raised the flag to mark the victory.",
+      "ex2_tr": "Zaferi kutlamak için bayrağı kaldırdılar."
     },
     {
       "id": 1340,
       "categoryId": 6,
       "ENG": "flame",
-      "TR": "alev"
+      "TR": "alev",
+      "ipa": "/fleɪm/",
+      "pos": "noun",
+      "ex1": "The candle flame flickered in the dark.",
+      "ex1_tr": "Mum alevi karanlıkta titriyordu.",
+      "ex2": "The house was engulfed in flames.",
+      "ex2_tr": "Ev alevler içinde kaldı."
     },
     {
       "id": 1341,
       "categoryId": 6,
       "ENG": "flash",
-      "TR": "flaş"
+      "TR": "flaş",
+      "ipa": "/flæʃ/",
+      "pos": "noun",
+      "ex1": "I saw a flash of lightning in the sky.",
+      "ex1_tr": "Gökyüzünde bir şimşek çakımı gördüm.",
+      "ex2": "The camera flash was very bright.",
+      "ex2_tr": "Kameranın flaşı çok parlaktı."
     },
     {
       "id": 1342,
       "categoryId": 6,
       "ENG": "flat",
-      "TR": "düz"
+      "TR": "düz",
+      "ipa": "/flæt/",
+      "pos": "adjective",
+      "ex1": "The road was long and flat.",
+      "ex1_tr": "Yol uzun ve düzdü.",
+      "ex2": "I live in a flat on the third floor.",
+      "ex2_tr": "Üçüncü katta bir dairede yaşıyorum."
     },
     {
       "id": 1343,
       "categoryId": 6,
       "ENG": "flavour",
-      "TR": "lezzet"
+      "TR": "lezzet",
+      "ipa": "/ˈfleɪvər/",
+      "pos": "noun",
+      "ex1": "This soup has a rich, spicy flavour.",
+      "ex1_tr": "Bu çorbanın zengin, baharatlı bir lezzeti var.",
+      "ex2": "I love the flavour of fresh herbs.",
+      "ex2_tr": "Taze otların lezzetini seviyorum."
     },
     {
       "id": 1344,
       "categoryId": 6,
       "ENG": "flesh",
-      "TR": "eti"
+      "TR": "eti",
+      "ipa": "/fleʃ/",
+      "pos": "noun",
+      "ex1": "The flesh of the fruit was sweet and juicy.",
+      "ex1_tr": "Meyvenin eti tatlı ve suluydu.",
+      "ex2": "Humans are made of flesh and blood.",
+      "ex2_tr": "İnsanlar et ve kandan yapılmıştır."
     },
     {
       "id": 1345,
       "categoryId": 6,
       "ENG": "flight",
-      "TR": "uçuş"
+      "TR": "uçuş",
+      "ipa": "/flaɪt/",
+      "pos": "noun",
+      "ex1": "Our flight was delayed by two hours.",
+      "ex1_tr": "Uçuşumuz iki saat gecikti.",
+      "ex2": "The bird took flight from the branch.",
+      "ex2_tr": "Kuş daldan havalandı."
     },
     {
       "id": 1346,

@@ -94,11 +94,17 @@ class WordRepository {
 
     return maps.map((e) => Word(
       id: e['id'] as String,
-      english: e['english'] as String,
-      turkish: e['turkish'] as String,
-      definition: e['definition'] as String,
-      difficulty: e['difficulty'] as String,
+      english: (e['english'] as String?) ?? '',
+      turkish: (e['turkish'] as String?) ?? '',
+      definition: (e['definition'] as String?) ?? '',
+      difficulty: (e['difficulty'] as String?) ?? '1',
       isActive: (e['is_active'] as int) == 1,
+      example1: (e['example1'] as String?) ?? '',
+      example1Tr: (e['example1Tr'] as String?) ?? '',
+      example2: (e['example2'] as String?) ?? '',
+      example2Tr: (e['example2Tr'] as String?) ?? '',
+      ipa: (e['ipa'] as String?) ?? '',
+      partOfSpeech: (e['partOfSpeech'] as String?) ?? '',
     )).toList();
   }
 
@@ -109,5 +115,9 @@ class WordRepository {
        final updatedProgress = progress.copyWith(savedNotesIds: newNotes);
        await _databaseHelper.saveUserProgress(updatedProgress, userId);
      }
+  }
+
+  Future<void> resetUserProgress() async {
+    await _databaseHelper.resetUserProgress(userId);
   }
 }

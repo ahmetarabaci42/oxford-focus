@@ -1,12 +1,23 @@
 import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_tts/flutter_tts.dart';
 import 'package:oxford_focus/data/local/database_helper.dart';
 import 'package:oxford_focus/data/models/word.dart';
 import 'package:oxford_focus/providers/auth_provider.dart';
 import 'package:oxford_focus/providers/word_providers.dart';
 import 'package:oxford_focus/providers/stats_provider.dart';
 import 'package:shimmer/shimmer.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+
+final ttsProvider = Provider<FlutterTts>((ref) {
+  final tts = FlutterTts();
+  tts.setLanguage('en-US');
+  tts.setSpeechRate(0.48);
+  tts.setVolume(1.0);
+  tts.setPitch(1.0);
+  return tts;
+});
 
 // ─── Oxford level helper ──────────────────────────────────────────────────────
 
@@ -65,16 +76,56 @@ class _FlashcardScreenState extends ConsumerState<FlashcardScreen> {
   late AnimationController _flipController;
   late Animation<double> _flipAnimation;
   double _dragStartX = 0;
+  bool _hasLoadedSavedIndex = false;
+  List<String>? _loadedWordsIds;
 
   @override
   void initState() {
     super.initState();
-    // We can't init here without context, use TickerProviderStateMixin
   }
 
   @override
   void dispose() {
     super.dispose();
+  }
+
+  bool _listEquals(List<String> a, List<String> b) {
+    if (a.length != b.length) return false;
+    for (int i = 0; i < a.length; i++) {
+      if (a[i] != b[i]) return false;
+    }
+    return true;
+  }
+
+  Future<void> _loadSavedIndex(String userId, List<String> currentIds) async {
+    final prefs = await SharedPreferences.getInstance();
+    final savedHash = prefs.getString('flashcard_words_hash_$userId') ?? '';
+    final currentHash = currentIds.join(',');
+    
+    if (savedHash == currentHash) {
+      final savedIndex = prefs.getInt('flashcard_index_$userId') ?? 0;
+      if (savedIndex < currentIds.length) {
+        if (mounted) {
+          setState(() {
+            _currentIndex = savedIndex;
+          });
+        }
+      }
+    } else {
+      if (mounted) {
+        setState(() {
+          _currentIndex = 0;
+        });
+      }
+      await prefs.setString('flashcard_words_hash_$userId', currentHash);
+      await prefs.setInt('flashcard_index_$userId', 0);
+    }
+  }
+
+  Future<void> _saveIndex(String userId, int index, List<String> currentIds) async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setString('flashcard_words_hash_$userId', currentIds.join(','));
+    await prefs.setInt('flashcard_index_$userId', index);
   }
 
   void _handleResult(String result, List<Word> words, String userId) async {
@@ -109,6 +160,7 @@ class _FlashcardScreenState extends ConsumerState<FlashcardScreen> {
         _currentIndex++;
         _isFlipped = false;
       });
+      _saveIndex(userId, _currentIndex, words.map((w) => w.id).toList());
       // Invalidate stats
       ref.invalidate(statsProvider);
     } else {
@@ -134,6 +186,7 @@ class _FlashcardScreenState extends ConsumerState<FlashcardScreen> {
                     _currentIndex = 0;
                     _isFlipped = false;
                   });
+                  _saveIndex(userId, 0, words.map((w) => w.id).toList());
                 },
                 child: const Text('Study Again'),
               ),
@@ -181,6 +234,24 @@ class _FlashcardScreenState extends ConsumerState<FlashcardScreen> {
           }
           final userId =
               userIdAsync.when(data: (id) => id, loading: () => 'local_user', error: (_, __) => 'local_user');
+
+          if (!_hasLoadedSavedIndex) {
+            _hasLoadedSavedIndex = true;
+            _loadedWordsIds = words.map((w) => w.id).toList();
+            _loadSavedIndex(userId, _loadedWordsIds!);
+          } else {
+            final currentIds = words.map((w) => w.id).toList();
+            if (_loadedWordsIds == null || !_listEquals(_loadedWordsIds!, currentIds)) {
+              _loadedWordsIds = currentIds;
+              _currentIndex = 0;
+              _saveIndex(userId, 0, currentIds);
+            }
+          }
+
+          if (_currentIndex >= words.length) {
+            _currentIndex = 0;
+          }
+
           return _buildStudyView(words, userId);
         },
       ),
@@ -468,55 +539,66 @@ class _FlipCardState extends State<_FlipCard>
         end: Alignment.bottomRight,
       ),
       borderColor: const Color(0xFF00E5FF).withOpacity(0.3),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+      child: Stack(
         children: [
-          // POS badge
-          Container(
-            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
-            decoration: BoxDecoration(
-              color: _posColor(pos).withOpacity(0.15),
-              borderRadius: BorderRadius.circular(20),
-              border: Border.all(color: _posColor(pos).withOpacity(0.5)),
-            ),
-            child: Text(
-              pos.toUpperCase(),
-              style: TextStyle(
-                  color: _posColor(pos),
-                  fontSize: 11,
-                  fontWeight: FontWeight.w700,
-                  letterSpacing: 1.5),
+          Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                // POS badge
+                Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                  decoration: BoxDecoration(
+                    color: _posColor(pos).withOpacity(0.15),
+                    borderRadius: BorderRadius.circular(20),
+                    border: Border.all(color: _posColor(pos).withOpacity(0.5)),
+                  ),
+                  child: Text(
+                    pos.toUpperCase(),
+                    style: TextStyle(
+                        color: _posColor(pos),
+                        fontSize: 11,
+                        fontWeight: FontWeight.w700,
+                        letterSpacing: 1.5),
+                  ),
+                ),
+                const SizedBox(height: 24),
+                // English word
+                Text(
+                  widget.word.english,
+                  style: const TextStyle(
+                    fontSize: 48,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                    height: 1.1,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+                const SizedBox(height: 12),
+                // IPA (real or simulated)
+                Text(
+                  widget.word.ipa.isNotEmpty ? widget.word.ipa : _simulateIPA(widget.word.english),
+                  style: TextStyle(
+                      color: Colors.grey[500], fontSize: 18, fontStyle: FontStyle.italic),
+                  textAlign: TextAlign.center,
+                ),
+                const SizedBox(height: 32),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(Icons.touch_app_rounded, size: 16, color: Colors.grey[600]),
+                    const SizedBox(width: 6),
+                    Text('Tap to flip',
+                        style: TextStyle(color: Colors.grey[600], fontSize: 13)),
+                  ],
+                ),
+              ],
             ),
           ),
-          const SizedBox(height: 24),
-          // English word
-          Text(
-            widget.word.english,
-            style: const TextStyle(
-              fontSize: 48,
-              fontWeight: FontWeight.bold,
-              color: Colors.white,
-              height: 1.1,
-            ),
-            textAlign: TextAlign.center,
-          ),
-          const SizedBox(height: 12),
-          // IPA (real or simulated)
-          Text(
-            widget.word.ipa.isNotEmpty ? widget.word.ipa : _simulateIPA(widget.word.english),
-            style: TextStyle(
-                color: Colors.grey[500], fontSize: 18, fontStyle: FontStyle.italic),
-            textAlign: TextAlign.center,
-          ),
-          const SizedBox(height: 32),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Icon(Icons.touch_app_rounded, size: 16, color: Colors.grey[600]),
-              const SizedBox(width: 6),
-              Text('Tap to flip',
-                  style: TextStyle(color: Colors.grey[600], fontSize: 13)),
-            ],
+          Positioned(
+            bottom: 0,
+            right: 0,
+            child: _SpeakerButton(text: widget.word.english),
           ),
         ],
       ),
@@ -540,94 +622,103 @@ class _FlipCardState extends State<_FlipCard>
         end: Alignment.bottomRight,
       ),
       borderColor: const Color(0xFFFF4081).withOpacity(0.3),
-      child: SingleChildScrollView(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            // Oxford level badge
-            Container(
-              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
-              decoration: BoxDecoration(
-                color: _levelColor(level).withOpacity(0.15),
-                borderRadius: BorderRadius.circular(20),
-                border:
-                    Border.all(color: _levelColor(level).withOpacity(0.5)),
-              ),
-              child: Text(
-                'Oxford $level',
-                style: TextStyle(
-                    color: _levelColor(level),
-                    fontSize: 11,
-                    fontWeight: FontWeight.w700,
-                    letterSpacing: 1.5),
-              ),
-            ),
-            const SizedBox(height: 20),
-            // Turkish meaning
-            Text(
-              widget.word.turkish,
-              style: const TextStyle(
-                fontSize: 36,
-                fontWeight: FontWeight.bold,
-                color: Color(0xFF00E5FF),
-              ),
-              textAlign: TextAlign.center,
-            ),
-            const SizedBox(height: 28),
-            // Divider
-            Divider(color: Colors.grey[800], thickness: 1),
-            const SizedBox(height: 16),
-            // Example sentences
-            const Align(
-              alignment: Alignment.centerLeft,
-              child: Text(
-                'Examples',
-                style: TextStyle(
-                    color: Colors.grey,
-                    fontSize: 11,
-                    fontWeight: FontWeight.w700,
-                    letterSpacing: 1.5),
-              ),
-            ),
-            const SizedBox(height: 10),
-            ...examples.map((ex) => Padding(
-                  padding: const EdgeInsets.only(bottom: 12),
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      const Text('›',
-                          style: TextStyle(
-                              color: Color(0xFFFF4081),
-                              fontSize: 18,
-                              fontWeight: FontWeight.bold)),
-                      const SizedBox(width: 8),
-                      Expanded(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              ex['english']!,
-                              style: const TextStyle(
-                                  color: Colors.white, fontSize: 14, height: 1.4, fontWeight: FontWeight.w500),
-                            ),
-                            const SizedBox(height: 4),
-                            Text(
-                              ex['turkish']!,
-                              style: TextStyle(
-                                  color: const Color(0xFF00E5FF).withOpacity(0.85),
-                                  fontSize: 12.5,
-                                  fontStyle: FontStyle.italic,
-                                  height: 1.3),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
+      child: Stack(
+        children: [
+          SingleChildScrollView(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                // Oxford level badge
+                Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                  decoration: BoxDecoration(
+                    color: _levelColor(level).withOpacity(0.15),
+                    borderRadius: BorderRadius.circular(20),
+                    border:
+                        Border.all(color: _levelColor(level).withOpacity(0.5)),
                   ),
-                )),
-          ],
-        ),
+                  child: Text(
+                    'Oxford $level',
+                    style: TextStyle(
+                        color: _levelColor(level),
+                        fontSize: 11,
+                        fontWeight: FontWeight.w700,
+                        letterSpacing: 1.5),
+                  ),
+                ),
+                const SizedBox(height: 20),
+                // Turkish meaning
+                Text(
+                  widget.word.turkish,
+                  style: const TextStyle(
+                    fontSize: 36,
+                    fontWeight: FontWeight.bold,
+                    color: Color(0xFF00E5FF),
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+                const SizedBox(height: 28),
+                // Divider
+                Divider(color: Colors.grey[800], thickness: 1),
+                const SizedBox(height: 16),
+                // Example sentences
+                const Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    'Examples',
+                    style: TextStyle(
+                        color: Colors.grey,
+                        fontSize: 11,
+                        fontWeight: FontWeight.w700,
+                        letterSpacing: 1.5),
+                  ),
+                ),
+                const SizedBox(height: 10),
+                ...examples.map((ex) => Padding(
+                      padding: const EdgeInsets.only(bottom: 12),
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const Text('›',
+                              style: TextStyle(
+                                  color: Color(0xFFFF4081),
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold)),
+                          const SizedBox(width: 8),
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  ex['english']!,
+                                  style: const TextStyle(
+                                      color: Colors.white, fontSize: 14, height: 1.4, fontWeight: FontWeight.w500),
+                                ),
+                                const SizedBox(height: 4),
+                                Text(
+                                  ex['turkish']!,
+                                  style: TextStyle(
+                                      color: const Color(0xFF00E5FF).withOpacity(0.85),
+                                      fontSize: 12.5,
+                                      fontStyle: FontStyle.italic,
+                                      height: 1.3),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    )),
+              ],
+            ),
+          ),
+          Positioned(
+            bottom: 0,
+            right: 0,
+            child: _SpeakerButton(text: widget.word.english),
+          ),
+        ],
       ),
     );
   }
@@ -787,6 +878,35 @@ class _ActionButton extends StatelessWidget {
               ),
             ],
           ),
+        ),
+      ),
+    );
+  }
+}
+
+// ─── Speaker Button ──────────────────────────────────────────────────────────
+
+class _SpeakerButton extends ConsumerWidget {
+  final String text;
+
+  const _SpeakerButton({required this.text});
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    return GestureDetector(
+      onTap: () {}, // Prevent card flip propagation
+      child: Container(
+        decoration: BoxDecoration(
+          color: Colors.white.withOpacity(0.08),
+          shape: BoxShape.circle,
+        ),
+        child: IconButton(
+          icon: const Icon(Icons.volume_up_rounded, color: Color(0xFF00E5FF), size: 26),
+          onPressed: () async {
+            final tts = ref.read(ttsProvider);
+            await tts.stop();
+            await tts.speak(text);
+          },
         ),
       ),
     );
