@@ -27,6 +27,18 @@ mixin _$Word {
   String get difficulty => throw _privateConstructorUsedError;
   @JsonKey(name: 'is_active')
   bool get isActive => throw _privateConstructorUsedError;
+  @JsonKey(name: 'ex1')
+  String get example1 => throw _privateConstructorUsedError;
+  @JsonKey(name: 'ex1_tr')
+  String get example1Tr => throw _privateConstructorUsedError;
+  @JsonKey(name: 'ex2')
+  String get example2 => throw _privateConstructorUsedError;
+  @JsonKey(name: 'ex2_tr')
+  String get example2Tr => throw _privateConstructorUsedError;
+  @JsonKey(name: 'ipa')
+  String get ipa => throw _privateConstructorUsedError;
+  @JsonKey(name: 'pos')
+  String get partOfSpeech => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -44,7 +56,13 @@ abstract class $WordCopyWith<$Res> {
       String turkish,
       String definition,
       String difficulty,
-      @JsonKey(name: 'is_active') bool isActive});
+      @JsonKey(name: 'is_active') bool isActive,
+      @JsonKey(name: 'ex1') String example1,
+      @JsonKey(name: 'ex1_tr') String example1Tr,
+      @JsonKey(name: 'ex2') String example2,
+      @JsonKey(name: 'ex2_tr') String example2Tr,
+      @JsonKey(name: 'ipa') String ipa,
+      @JsonKey(name: 'pos') String partOfSpeech});
 }
 
 /// @nodoc
@@ -66,6 +84,12 @@ class _$WordCopyWithImpl<$Res, $Val extends Word>
     Object? definition = null,
     Object? difficulty = null,
     Object? isActive = null,
+    Object? example1 = null,
+    Object? example1Tr = null,
+    Object? example2 = null,
+    Object? example2Tr = null,
+    Object? ipa = null,
+    Object? partOfSpeech = null,
   }) {
     return _then(_value.copyWith(
       id: null == id
@@ -92,6 +116,30 @@ class _$WordCopyWithImpl<$Res, $Val extends Word>
           ? _value.isActive
           : isActive // ignore: cast_nullable_to_non_nullable
               as bool,
+      example1: null == example1
+          ? _value.example1
+          : example1 // ignore: cast_nullable_to_non_nullable
+              as String,
+      example1Tr: null == example1Tr
+          ? _value.example1Tr
+          : example1Tr // ignore: cast_nullable_to_non_nullable
+              as String,
+      example2: null == example2
+          ? _value.example2
+          : example2 // ignore: cast_nullable_to_non_nullable
+              as String,
+      example2Tr: null == example2Tr
+          ? _value.example2Tr
+          : example2Tr // ignore: cast_nullable_to_non_nullable
+              as String,
+      ipa: null == ipa
+          ? _value.ipa
+          : ipa // ignore: cast_nullable_to_non_nullable
+              as String,
+      partOfSpeech: null == partOfSpeech
+          ? _value.partOfSpeech
+          : partOfSpeech // ignore: cast_nullable_to_non_nullable
+              as String,
     ) as $Val);
   }
 }
@@ -109,7 +157,13 @@ abstract class _$$WordImplCopyWith<$Res> implements $WordCopyWith<$Res> {
       String turkish,
       String definition,
       String difficulty,
-      @JsonKey(name: 'is_active') bool isActive});
+      @JsonKey(name: 'is_active') bool isActive,
+      @JsonKey(name: 'ex1') String example1,
+      @JsonKey(name: 'ex1_tr') String example1Tr,
+      @JsonKey(name: 'ex2') String example2,
+      @JsonKey(name: 'ex2_tr') String example2Tr,
+      @JsonKey(name: 'ipa') String ipa,
+      @JsonKey(name: 'pos') String partOfSpeech});
 }
 
 /// @nodoc
@@ -128,6 +182,12 @@ class __$$WordImplCopyWithImpl<$Res>
     Object? definition = null,
     Object? difficulty = null,
     Object? isActive = null,
+    Object? example1 = null,
+    Object? example1Tr = null,
+    Object? example2 = null,
+    Object? example2Tr = null,
+    Object? ipa = null,
+    Object? partOfSpeech = null,
   }) {
     return _then(_$WordImpl(
       id: null == id
@@ -154,6 +214,30 @@ class __$$WordImplCopyWithImpl<$Res>
           ? _value.isActive
           : isActive // ignore: cast_nullable_to_non_nullable
               as bool,
+      example1: null == example1
+          ? _value.example1
+          : example1 // ignore: cast_nullable_to_non_nullable
+              as String,
+      example1Tr: null == example1Tr
+          ? _value.example1Tr
+          : example1Tr // ignore: cast_nullable_to_non_nullable
+              as String,
+      example2: null == example2
+          ? _value.example2
+          : example2 // ignore: cast_nullable_to_non_nullable
+              as String,
+      example2Tr: null == example2Tr
+          ? _value.example2Tr
+          : example2Tr // ignore: cast_nullable_to_non_nullable
+              as String,
+      ipa: null == ipa
+          ? _value.ipa
+          : ipa // ignore: cast_nullable_to_non_nullable
+              as String,
+      partOfSpeech: null == partOfSpeech
+          ? _value.partOfSpeech
+          : partOfSpeech // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
@@ -167,7 +251,13 @@ class _$WordImpl implements _Word {
       required this.turkish,
       required this.definition,
       required this.difficulty,
-      @JsonKey(name: 'is_active') this.isActive = true});
+      @JsonKey(name: 'is_active') this.isActive = true,
+      @JsonKey(name: 'ex1') this.example1 = '',
+      @JsonKey(name: 'ex1_tr') this.example1Tr = '',
+      @JsonKey(name: 'ex2') this.example2 = '',
+      @JsonKey(name: 'ex2_tr') this.example2Tr = '',
+      @JsonKey(name: 'ipa') this.ipa = '',
+      @JsonKey(name: 'pos') this.partOfSpeech = ''});
 
   factory _$WordImpl.fromJson(Map<String, dynamic> json) =>
       _$$WordImplFromJson(json);
@@ -185,10 +275,28 @@ class _$WordImpl implements _Word {
   @override
   @JsonKey(name: 'is_active')
   final bool isActive;
+  @override
+  @JsonKey(name: 'ex1')
+  final String example1;
+  @override
+  @JsonKey(name: 'ex1_tr')
+  final String example1Tr;
+  @override
+  @JsonKey(name: 'ex2')
+  final String example2;
+  @override
+  @JsonKey(name: 'ex2_tr')
+  final String example2Tr;
+  @override
+  @JsonKey(name: 'ipa')
+  final String ipa;
+  @override
+  @JsonKey(name: 'pos')
+  final String partOfSpeech;
 
   @override
   String toString() {
-    return 'Word(id: $id, english: $english, turkish: $turkish, definition: $definition, difficulty: $difficulty, isActive: $isActive)';
+    return 'Word(id: $id, english: $english, turkish: $turkish, definition: $definition, difficulty: $difficulty, isActive: $isActive, example1: $example1, example1Tr: $example1Tr, example2: $example2, example2Tr: $example2Tr, ipa: $ipa, partOfSpeech: $partOfSpeech)';
   }
 
   @override
@@ -204,13 +312,36 @@ class _$WordImpl implements _Word {
             (identical(other.difficulty, difficulty) ||
                 other.difficulty == difficulty) &&
             (identical(other.isActive, isActive) ||
-                other.isActive == isActive));
+                other.isActive == isActive) &&
+            (identical(other.example1, example1) ||
+                other.example1 == example1) &&
+            (identical(other.example1Tr, example1Tr) ||
+                other.example1Tr == example1Tr) &&
+            (identical(other.example2, example2) ||
+                other.example2 == example2) &&
+            (identical(other.example2Tr, example2Tr) ||
+                other.example2Tr == example2Tr) &&
+            (identical(other.ipa, ipa) || other.ipa == ipa) &&
+            (identical(other.partOfSpeech, partOfSpeech) ||
+                other.partOfSpeech == partOfSpeech));
   }
 
   @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
-      runtimeType, id, english, turkish, definition, difficulty, isActive);
+      runtimeType,
+      id,
+      english,
+      turkish,
+      definition,
+      difficulty,
+      isActive,
+      example1,
+      example1Tr,
+      example2,
+      example2Tr,
+      ipa,
+      partOfSpeech);
 
   @JsonKey(ignore: true)
   @override
@@ -233,7 +364,13 @@ abstract class _Word implements Word {
       required final String turkish,
       required final String definition,
       required final String difficulty,
-      @JsonKey(name: 'is_active') final bool isActive}) = _$WordImpl;
+      @JsonKey(name: 'is_active') final bool isActive,
+      @JsonKey(name: 'ex1') final String example1,
+      @JsonKey(name: 'ex1_tr') final String example1Tr,
+      @JsonKey(name: 'ex2') final String example2,
+      @JsonKey(name: 'ex2_tr') final String example2Tr,
+      @JsonKey(name: 'ipa') final String ipa,
+      @JsonKey(name: 'pos') final String partOfSpeech}) = _$WordImpl;
 
   factory _Word.fromJson(Map<String, dynamic> json) = _$WordImpl.fromJson;
 
@@ -250,6 +387,24 @@ abstract class _Word implements Word {
   @override
   @JsonKey(name: 'is_active')
   bool get isActive;
+  @override
+  @JsonKey(name: 'ex1')
+  String get example1;
+  @override
+  @JsonKey(name: 'ex1_tr')
+  String get example1Tr;
+  @override
+  @JsonKey(name: 'ex2')
+  String get example2;
+  @override
+  @JsonKey(name: 'ex2_tr')
+  String get example2Tr;
+  @override
+  @JsonKey(name: 'ipa')
+  String get ipa;
+  @override
+  @JsonKey(name: 'pos')
+  String get partOfSpeech;
   @override
   @JsonKey(ignore: true)
   _$$WordImplCopyWith<_$WordImpl> get copyWith =>

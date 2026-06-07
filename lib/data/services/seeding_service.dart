@@ -30,7 +30,7 @@ class SeedingService {
         // SQLite doesn't check unique English.
         // Let's assume for now user seeds once or we just add.
         
-        final String id = const Uuid().v4();
+        final String id = (item['id'] ?? const Uuid().v4()).toString();
         final word = Word(
           id: id,
           english: item['ENG'] ?? '',
@@ -38,6 +38,12 @@ class SeedingService {
           definition: '', // JSON doesn't seem to have definitions
           difficulty: 'medium',
           isActive: true,
+          example1: item['ex1'] ?? '',
+          example1Tr: item['ex1_tr'] ?? '',
+          example2: item['ex2'] ?? '',
+          example2Tr: item['ex2_tr'] ?? '',
+          ipa: item['ipa'] ?? '',
+          partOfSpeech: item['pos'] ?? '',
         );
         
         if (word.english.isEmpty) continue;

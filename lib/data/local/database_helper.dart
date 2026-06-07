@@ -25,7 +25,7 @@ class DatabaseHelper {
 
     return await openDatabase(
       path,
-      version: 2,
+      version: 3,
       onCreate: _onCreate,
       onUpgrade: _onUpgrade,
     );
@@ -43,6 +43,10 @@ class DatabaseHelper {
       await _createStudySessionsTable(db);
       await _createDailyStreaksTable(db);
     }
+    if (oldVersion < 3) {
+      await db.execute('DROP TABLE IF EXISTS words');
+      await _createWordsTable(db);
+    }
   }
 
   Future<void> _createWordsTable(Database db) async {
@@ -53,7 +57,13 @@ class DatabaseHelper {
         turkish TEXT,
         definition TEXT,
         difficulty TEXT,
-        is_active INTEGER
+        is_active INTEGER,
+        example1 TEXT,
+        example1Tr TEXT,
+        example2 TEXT,
+        example2Tr TEXT,
+        ipa TEXT,
+        partOfSpeech TEXT
       )
     ''');
   }
@@ -143,6 +153,12 @@ class DatabaseHelper {
         'definition': word.definition,
         'difficulty': word.difficulty,
         'is_active': word.isActive ? 1 : 0,
+        'example1': word.example1,
+        'example1Tr': word.example1Tr,
+        'example2': word.example2,
+        'example2Tr': word.example2Tr,
+        'ipa': word.ipa,
+        'partOfSpeech': word.partOfSpeech,
       },
       conflictAlgorithm: ConflictAlgorithm.replace,
     );
@@ -161,6 +177,12 @@ class DatabaseHelper {
           'definition': word.definition,
           'difficulty': word.difficulty,
           'is_active': word.isActive ? 1 : 0,
+          'example1': word.example1,
+          'example1Tr': word.example1Tr,
+          'example2': word.example2,
+          'example2Tr': word.example2Tr,
+          'ipa': word.ipa,
+          'partOfSpeech': word.partOfSpeech,
         },
         conflictAlgorithm: ConflictAlgorithm.replace,
       );
@@ -208,9 +230,15 @@ class DatabaseHelper {
         id: e['id'] as String,
         english: e['english'] as String,
         turkish: e['turkish'] as String,
-        definition: e['definition'] as String,
-        difficulty: e['difficulty'] as String,
+        definition: (e['definition'] as String?) ?? '',
+        difficulty: (e['difficulty'] as String?) ?? '1',
         isActive: (e['is_active'] as int) == 1,
+        example1: (e['example1'] as String?) ?? '',
+        example1Tr: (e['example1Tr'] as String?) ?? '',
+        example2: (e['example2'] as String?) ?? '',
+        example2Tr: (e['example2Tr'] as String?) ?? '',
+        ipa: (e['ipa'] as String?) ?? '',
+        partOfSpeech: (e['partOfSpeech'] as String?) ?? '',
       );
 
   // ─── Study Sessions (Statistics) ─────────────────────────────────────────────

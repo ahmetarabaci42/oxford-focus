@@ -460,7 +460,7 @@ class _FlipCardState extends State<_FlipCard>
   }
 
   Widget _buildFront() {
-    final pos = _inferPOS(widget.word.english);
+    final pos = widget.word.partOfSpeech.isNotEmpty ? widget.word.partOfSpeech : _inferPOS(widget.word.english);
     return _CardShell(
       gradient: const LinearGradient(
         colors: [Color(0xFF1E1E2E), Color(0xFF252535)],
@@ -501,9 +501,9 @@ class _FlipCardState extends State<_FlipCard>
             textAlign: TextAlign.center,
           ),
           const SizedBox(height: 12),
-          // IPA (simulated from word difficulty)
+          // IPA (real or simulated)
           Text(
-            _simulateIPA(widget.word.english),
+            widget.word.ipa.isNotEmpty ? widget.word.ipa : _simulateIPA(widget.word.english),
             style: TextStyle(
                 color: Colors.grey[500], fontSize: 18, fontStyle: FontStyle.italic),
             textAlign: TextAlign.center,
@@ -525,7 +525,13 @@ class _FlipCardState extends State<_FlipCard>
 
   Widget _buildBack() {
     final level = _oxfordLevel(int.tryParse(widget.word.difficulty.length <= 2 ? widget.word.difficulty : '1') ?? 1);
-    final examples = _generateExamples(widget.word.english, widget.word.turkish);
+    final examples = widget.word.example1.isNotEmpty
+        ? [
+            {'english': widget.word.example1, 'turkish': widget.word.example1Tr},
+            if (widget.word.example2.isNotEmpty)
+              {'english': widget.word.example2, 'turkish': widget.word.example2Tr},
+          ]
+        : _generateExamples(widget.word.english, widget.word.turkish);
 
     return _CardShell(
       gradient: const LinearGradient(
